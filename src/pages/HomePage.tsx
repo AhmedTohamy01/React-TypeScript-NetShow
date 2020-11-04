@@ -1,9 +1,11 @@
-import React from "react"
+import React, { Children, ReactNode } from "react"
+import HeaderCompound from "../compounds/HeaderCompound"
+
 
 function HomePage() {
   return (
     <>
-    hello home page
+      <HeaderCompound />
     </>
   )
 }

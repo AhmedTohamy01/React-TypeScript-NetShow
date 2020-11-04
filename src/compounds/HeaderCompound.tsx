@@ -1,17 +1,16 @@
 import React, { ReactNode } from "react"
-import { Interface } from 'readline'
 
 interface defaultProps {
-	children: ReactNode;
+  children?: ReactNode
 }
 
-
-function HeaderCompound({ children, ...restProps }: defaultProps) {
-	return (
-		<div {...restProps}>
-			{children}
-		</div>
-	)
+function HeaderCompound({ children }: defaultProps) {
+  return (
+    <>
+      header compound
+      {children}
+    </>
+  )
 }
 
 export default HeaderCompound
