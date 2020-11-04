@@ -39,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "firebase": "^8.0.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
   }
 }
