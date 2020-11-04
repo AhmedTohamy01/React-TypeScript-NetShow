@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react"
 import HeaderWrapper from '../components/Header/HeaderWrapper'
+import Navbar from './Navbar'
 
 interface defaultProps {
   children?: ReactNode
@@ -8,7 +9,11 @@ interface defaultProps {
 function HeaderCompound({ children }: defaultProps) {
   return (
     <>
-      <HeaderWrapper></HeaderWrapper>
+			<HeaderWrapper>
+				<Navbar>
+					
+				</Navbar>
+			</HeaderWrapper>
       {children}
     </>
   )
