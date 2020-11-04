@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import HeaderWrapper from '../components/Header/HeaderWrapper'
 
 interface defaultProps {
   children?: ReactNode
@@ -7,7 +8,7 @@ interface defaultProps {
 function HeaderCompound({ children }: defaultProps) {
   return (
     <>
-      header compound
+      <HeaderWrapper></HeaderWrapper>
       {children}
     </>
   )
