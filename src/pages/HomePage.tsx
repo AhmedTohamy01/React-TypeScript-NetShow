@@ -13,7 +13,6 @@ function HomePage() {
       </HeaderCompound>
       <Seperator />
       <JumboCompound />
-			<Seperator />
 			<AccordionCompound />
     </>
   )
