@@ -24,8 +24,8 @@ function HeaderCompound({ children }: defaultProps) {
           <FeatureTitle>Unlimited movies, TV shows and more.</FeatureTitle>
           <Warning>This is NOT official Netflix</Warning>
         </FeatureWrapper>
-			</HeaderWrapper>
-			{children}
+        {children}
+      </HeaderWrapper>
     </>
   )
 }
