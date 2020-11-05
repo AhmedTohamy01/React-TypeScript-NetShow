@@ -1,10 +1,13 @@
 import React from "react"
+import OptFormWrapper from '../components/OptForm/OptFormWrapper'
 
 
 function OptFormCompound() {
   return (
     <>
-      opt from compound
+			<OptFormWrapper>
+				
+			</OptFormWrapper>
     </>
   )
 }
