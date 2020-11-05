@@ -1,9 +1,12 @@
 import React from "react"
+import JumboWrapper from '../components/Jumbotron/JumboWrapper'
 
 function JumboCompound() {
   return (
 		<>
-			jumbo compound 
+			<JumboWrapper>
+				
+			</JumboWrapper>
 		</>
   )
 }
