@@ -1,6 +1,7 @@
 import React from "react"
 import FeatureTitle from "../components/Feature/FeatureTitle"
 import FeatureWrapper from "../components/Feature/FeatureWrapper"
+import Warning from '../components/Feature/Warning'
 import HeaderWrapper from "../components/Header/HeaderWrapper"
 import Logo from "../components/Header/Logo"
 import Navbar from "../components/Header/Navbar"
@@ -16,6 +17,7 @@ function HeaderCompound() {
         </Navbar>
         <FeatureWrapper>
           <FeatureTitle>Unlimited movies, TV shows and more.</FeatureTitle>
+          <Warning>This is NOT official Netflix</Warning>
         </FeatureWrapper>
       </HeaderWrapper>
     </>
