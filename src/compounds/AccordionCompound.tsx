@@ -1,11 +1,13 @@
 import React from "react"
+import AccordionWrapper from '../components/Accordion/AccordionWrapper'
 
 
 function AccordionCompound() {
   return (
 		<>
-			Accordion compound
-			</>
+			<AccordionWrapper>
+			</AccordionWrapper>
+		</>
   )
 }
 
