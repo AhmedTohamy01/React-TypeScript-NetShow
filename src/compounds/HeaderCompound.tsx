@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react"
 import HeaderWrapper from '../components/Header/HeaderWrapper'
-import Logo from './Logo'
-import Navbar from './Navbar'
-import SigninButton from './SigninButton'
+import Logo from '../components/Header/Logo'
+import Navbar from "../components/Header/Navbar"
+import SigninButton from '../components/Header/SigninButton'
 
 interface defaultProps {
   children?: ReactNode
