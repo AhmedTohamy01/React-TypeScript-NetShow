@@ -1,4 +1,4 @@
-import React, { Children, ReactNode } from "react"
+import React from "react"
 import HeaderCompound from "../compounds/HeaderCompound"
 
 
