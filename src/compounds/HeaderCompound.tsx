@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import FeatureWrapper from '../components/Feature/FeatureWrapper'
 import HeaderWrapper from '../components/Header/HeaderWrapper'
 import Logo from '../components/Header/Logo'
 import Navbar from "../components/Header/Navbar"
@@ -15,7 +16,8 @@ function HeaderCompound({ children }: defaultProps) {
         <Navbar>
           <Logo />
           <SigninButton>Sign In</SigninButton>
-        </Navbar>
+				</Navbar>
+				<FeatureWrapper></FeatureWrapper>
       </HeaderWrapper>
       {children}
     </>
