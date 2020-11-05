@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react"
 import HeaderWrapper from '../components/Header/HeaderWrapper'
+import Logo from './Logo'
 import Navbar from './Navbar'
 
 interface defaultProps {
@@ -11,7 +12,7 @@ function HeaderCompound({ children }: defaultProps) {
     <>
 			<HeaderWrapper>
 				<Navbar>
-					
+					<Logo />
 				</Navbar>
 			</HeaderWrapper>
       {children}
