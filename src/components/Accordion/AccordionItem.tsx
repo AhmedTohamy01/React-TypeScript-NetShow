@@ -10,11 +10,11 @@ interface defaultProps {
 /*---> Component <---*/
 function AccordionItem({ children, ...restProps }: defaultProps) {
 	const [AccordionShow, setAccordionShow] = useState(false)
-	const ContextData = [AccordionShow, setAccordionShow]
+	// const ContextData = [AccordionShow, setAccordionShow]
 
   return (
-    <AccordionContext.Provider value={ContextData}>
-      <Wrapper>{children}</Wrapper>
+    <AccordionContext.Provider value={[AccordionShow, setAccordionShow]}>
+      <Wrapper {...restProps }>{children}</Wrapper>
     </AccordionContext.Provider>
   )
 }
