@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import FeatureTitle from "../components/Feature/FeatureTitle"
 import FeatureWrapper from "../components/Feature/FeatureWrapper"
 import Warning from '../components/Feature/Warning'
@@ -7,7 +7,12 @@ import Logo from "../components/Header/Logo"
 import Navbar from "../components/Header/Navbar"
 import SigninButton from "../components/Header/SigninButton"
 
-function HeaderCompound() {
+
+interface defaultProps {
+  children?: ReactNode
+}
+
+function HeaderCompound({ children }: defaultProps) {
   return (
     <>
       <HeaderWrapper>
@@ -19,7 +24,8 @@ function HeaderCompound() {
           <FeatureTitle>Unlimited movies, TV shows and more.</FeatureTitle>
           <Warning>This is NOT official Netflix</Warning>
         </FeatureWrapper>
-      </HeaderWrapper>
+			</HeaderWrapper>
+			{children}
     </>
   )
 }
