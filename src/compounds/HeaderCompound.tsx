@@ -9,7 +9,7 @@ import Navbar from '../components/Header/Navbar'
 import SigninButton from '../components/Header/SigninButton'
 
 type ChildrenType = {
-  children: ReactNode
+  children?: ReactNode
 }
 
 const HeaderCompound = ({ children }: ChildrenType) => {
