@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
+interface ChildrenType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const JumboItem = ({ children }: defaultProps) => {
+const JumboItem = ({ children }: ChildrenType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
