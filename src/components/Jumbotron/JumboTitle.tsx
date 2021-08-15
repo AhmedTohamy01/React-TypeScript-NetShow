@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface ChildrenType {
+  children?: string
 }
 
 /*---> Component <---*/
-const JumboTitle = ({ children, ...restProps }: defaultProps) => {
-  return <Title {...restProps}>{children}</Title>
+const JumboTitle = ({ children }: ChildrenType) => {
+  return <Title>{children}</Title>
 }
 
 /*---> Styles <---*/
