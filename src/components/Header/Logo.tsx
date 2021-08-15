@@ -1,18 +1,12 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
-const Logo = ({ children, ...restProps }: defaultProps) => {
+const Logo = () => {
   return (
     <div>
-      <a href='/' {...restProps}>
-        {children}
+      <a href='/' >
         <Image
-          className='logo'
           src='/images/misc/logo.svg'
           alt='Netflix logo'
         />
