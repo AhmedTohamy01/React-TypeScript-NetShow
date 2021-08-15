@@ -1,15 +1,15 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface ChildrenType {
+  children?: string
 }
 
 /*---> Component <---*/
-const OptFormButton = ({ children, ...restProps }: defaultProps) => {
+const OptFormButton = ({ children }: ChildrenType) => {
   return (
     <Wrapper>
-      <a href='/signup' {...restProps}>
+      <a href='/signup'>
         {children}
         <img src='../images/icons/chevron-right.png' alt='Try Now' />
       </a>
