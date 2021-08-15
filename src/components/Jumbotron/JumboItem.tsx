@@ -6,8 +6,8 @@ interface defaultProps {
 }
 
 /*---> Component <---*/
-const JumboItem = ({ children, ...restProps }: defaultProps) => {
-  return <Wrapper {...restProps}>{children}</Wrapper>
+const JumboItem = ({ children }: defaultProps) => {
+  return <Wrapper>{children}</Wrapper>
 }
 
 /*---> Styles <---*/
