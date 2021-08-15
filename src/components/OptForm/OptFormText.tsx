@@ -1,13 +1,13 @@
-import React, { ReactNode } from "react"
+import React from "react"
 import styled from "styled-components"
 
-interface defaultProps {
-  children?: ReactNode
+interface ChildrenType {
+  children?: string
 }
 
 /*---> Component <---*/
-const OptFormText = ({ children, ...restProps }: defaultProps) => {
-  return <Text {...restProps}>{children}</Text>
+const OptFormText = ({ children }: ChildrenType) => {
+  return <Text>{children}</Text>
 }
 
 /*---> Styles <---*/
