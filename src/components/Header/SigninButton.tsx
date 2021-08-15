@@ -1,17 +1,15 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface ChildrenType {
+  children?: string
 }
 
 /*---> Component <---*/
-const SigninButton = ({ children, ...restProps }: defaultProps) => {
+const SigninButton = ({ children }: ChildrenType) => {
   return (
     <div>
-      <Link href='/signin' {...restProps}>
-        {children}
-      </Link>
+      <Link href='/signin'>{children}</Link>
     </div>
   )
 }
