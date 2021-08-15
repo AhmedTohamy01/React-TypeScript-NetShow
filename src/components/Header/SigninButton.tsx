@@ -1,15 +1,15 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function SigninButton({ children, ...restProps }: defaultProps) {
+const SigninButton = ({ children, ...restProps }: defaultProps) => {
   return (
     <div>
-      <Link href="/signin" {...restProps}>
+      <Link href='/signin' {...restProps}>
         {children}
       </Link>
     </div>

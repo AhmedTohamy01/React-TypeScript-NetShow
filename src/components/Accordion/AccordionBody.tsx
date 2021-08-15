@@ -1,15 +1,15 @@
-import React, { useContext, ReactNode } from "react"
-import AccordionContext from "./AccordionContext"
-import styled from "styled-components"
+import React, { useContext, ReactNode } from 'react'
+import AccordionContext from './AccordionContext'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function AccordionBody({ children, ...restProps }: defaultProps) {
-	const [AccordionShow, setAccordionShow] = useContext(AccordionContext)
-	
+const AccordionBody = ({ children, ...restProps }: defaultProps) => {
+  const [AccordionShow, setAccordionShow] = useContext(AccordionContext)
+
   return AccordionShow ? <Wrapper {...restProps}>{children}</Wrapper> : null
 }
 

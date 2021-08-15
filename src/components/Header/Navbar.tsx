@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
-	children?: ReactNode
+  children?: ReactNode
 }
 
 /*---> Component <---*/
-function Navbar({ children, ...restProps }: defaultProps) {
+const Navbar = ({ children, ...restProps }: defaultProps) => {
   return <Wrapper {...restProps}>{children}</Wrapper>
 }
 

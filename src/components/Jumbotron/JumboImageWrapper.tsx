@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function JumboImageWrapper({ children, ...restProps }: defaultProps) {
+const JumboImageWrapper = ({ children, ...restProps }: defaultProps) => {
   return <Wrapper {...restProps}>{children}</Wrapper>
 }
 

@@ -1,20 +1,19 @@
-import React, { useState, ReactNode } from "react"
-import AccordionContext from "./AccordionContext"
-import styled from "styled-components"
+import React, { useState, ReactNode } from 'react'
+import AccordionContext from './AccordionContext'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
-
 /*---> Component <---*/
-function AccordionItem({ children, ...restProps }: defaultProps) {
-	const [AccordionShow, setAccordionShow] = useState(false)
-	// const ContextData = [AccordionShow, setAccordionShow]
+const AccordionItem = ({ children, ...restProps }: defaultProps) => {
+  const [AccordionShow, setAccordionShow] = useState(false)
+  // const ContextData = [AccordionShow, setAccordionShow]
 
   return (
     <AccordionContext.Provider value={[AccordionShow, setAccordionShow]}>
-      <Wrapper {...restProps }>{children}</Wrapper>
+      <Wrapper {...restProps}>{children}</Wrapper>
     </AccordionContext.Provider>
   )
 }

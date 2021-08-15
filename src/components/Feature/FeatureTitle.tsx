@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function FeatureTitle({ children, ...restProps }: defaultProps) {
+const FeatureTitle = ({ children, ...restProps }: defaultProps) => {
   return <Title {...restProps}>{children}</Title>
 }
 

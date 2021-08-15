@@ -1,13 +1,12 @@
-import React from "react"
-import AccordionWrapper from "../components/Accordion/AccordionWrapper"
-import AccordionTitle from "../components/Accordion/AccordionTitle"
-import AccordionItem from "../components/Accordion/AccordionItem"
-import AccordionHeader from "../components/Accordion/AccordionHeader"
-import AccordionBody from "../components/Accordion/AccordionBody"
-import FAQData from "../data/faqs.json"
+import React from 'react'
+import AccordionWrapper from '../components/Accordion/AccordionWrapper'
+import AccordionTitle from '../components/Accordion/AccordionTitle'
+import AccordionItem from '../components/Accordion/AccordionItem'
+import AccordionHeader from '../components/Accordion/AccordionHeader'
+import AccordionBody from '../components/Accordion/AccordionBody'
+import FAQData from '../data/faqs.json'
 
-
-function AccordionCompound() {
+const AccordionCompound = () => {
   return (
     <>
       <AccordionWrapper>

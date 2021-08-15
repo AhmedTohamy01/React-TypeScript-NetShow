@@ -6,7 +6,7 @@ interface defaultProps {
 }
 
 /*---> Component <---*/
-function OptFormText({ children, ...restProps }: defaultProps) {
+const OptFormText = ({ children, ...restProps }: defaultProps) => {
   return <Text {...restProps}>{children}</Text>
 }
 

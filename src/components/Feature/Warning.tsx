@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function Warning({ children, ...restProps }: defaultProps) {
+const Warning = ({ children, ...restProps }: defaultProps) => {
   return <SubTitle {...restProps}>{children}</SubTitle>
 }
 

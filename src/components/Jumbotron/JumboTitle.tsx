@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function JumboTitle({ children, ...restProps }: defaultProps) {
+const JumboTitle = ({ children, ...restProps }: defaultProps) => {
   return <Title {...restProps}>{children}</Title>
 }
 

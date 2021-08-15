@@ -1,26 +1,26 @@
-import React, { useState, useContext, ReactNode } from "react"
-import AccordionContext from "./AccordionContext"
-import styled from "styled-components"
+import React, { useState, useContext, ReactNode } from 'react'
+import AccordionContext from './AccordionContext'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function AccordionHeader({ children, ...restProps }: defaultProps) {
-	const [AccordionShow, setAccordionShow] = useContext(AccordionContext)
+const AccordionHeader = ({ children, ...restProps }: defaultProps) => {
+  const [AccordionShow, setAccordionShow] = useContext(AccordionContext)
 
   function handleClick() {
-		setAccordionShow(!AccordionShow)
+    setAccordionShow(!AccordionShow)
   }
 
   return (
     <Wrapper onClick={handleClick} {...restProps}>
       {children}
       {AccordionShow ? (
-        <Image src="../images/icons/close-slim.png" alt="Close" />
+        <Image src='../images/icons/close-slim.png' alt='Close' />
       ) : (
-        <Image src="../images/icons/add.png" alt="Open" />
+        <Image src='../images/icons/add.png' alt='Open' />
       )}
     </Wrapper>
   )

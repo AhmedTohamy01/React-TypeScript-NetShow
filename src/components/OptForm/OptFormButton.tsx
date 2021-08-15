@@ -1,17 +1,17 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-function OptFormButton({ children, ...restProps }: defaultProps) {
+const OptFormButton = ({ children, ...restProps }: defaultProps) => {
   return (
     <Wrapper>
-      <a href="/signup" {...restProps}>
+      <a href='/signup' {...restProps}>
         {children}
-        <img src="../images/icons/chevron-right.png" alt="Try Now" />
+        <img src='../images/icons/chevron-right.png' alt='Try Now' />
       </a>
     </Wrapper>
   )

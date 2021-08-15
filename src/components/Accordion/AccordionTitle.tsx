@@ -1,12 +1,12 @@
-import React, { ReactNode } from "react"
-import styled from "styled-components"
+import React, { ReactNode } from 'react'
+import styled from 'styled-components'
 
 interface defaultProps {
-	children?: ReactNode
+  children?: ReactNode
 }
 
 /*---> Component <---*/
-function AccordionTitle({ children, ...restProps }: defaultProps) {
+const AccordionTitle = ({ children, ...restProps }: defaultProps) => {
   return <Title {...restProps}>{children}</Title>
 }
 
