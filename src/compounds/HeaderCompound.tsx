@@ -1,18 +1,18 @@
-import React, { ReactNode } from "react"
-import FeatureTitle from "../components/Feature/FeatureTitle"
-import FeatureWrapper from "../components/Feature/FeatureWrapper"
+import React, { ReactNode } from 'react'
+import { ReactElement } from 'react'
+import FeatureTitle from '../components/Feature/FeatureTitle'
+import FeatureWrapper from '../components/Feature/FeatureWrapper'
 import Warning from '../components/Feature/Warning'
-import HeaderWrapper from "../components/Header/HeaderWrapper"
-import Logo from "../components/Header/Logo"
-import Navbar from "../components/Header/Navbar"
-import SigninButton from "../components/Header/SigninButton"
+import HeaderWrapper from '../components/Header/HeaderWrapper'
+import Logo from '../components/Header/Logo'
+import Navbar from '../components/Header/Navbar'
+import SigninButton from '../components/Header/SigninButton'
 
-
-interface defaultProps {
-  children?: ReactNode
+type ChildrenType = {
+  children: ReactNode
 }
 
-function HeaderCompound({ children }: defaultProps) {
+const HeaderCompound = ({ children }: ChildrenType) => {
   return (
     <>
       <HeaderWrapper>
