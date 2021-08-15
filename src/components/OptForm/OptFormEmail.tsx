@@ -1,16 +1,10 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
-const OptFormEmail = ({ children, ...restProps }: defaultProps) => {
+const OptFormEmail = () => {
   return (
-    <EmailInput placeholder='Email Address' {...restProps}>
-      {children}
-    </EmailInput>
+    <EmailInput placeholder='Email Address' />
   )
 }
 
