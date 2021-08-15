@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import { ReactElement } from 'react'
 import FeatureTitle from '../components/Feature/FeatureTitle'
 import FeatureWrapper from '../components/Feature/FeatureWrapper'
 import Warning from '../components/Feature/Warning'
