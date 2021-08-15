@@ -1,13 +1,9 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
-const Seperator = ({ children, ...restProps }: defaultProps) => {
-  return <Wrapper {...restProps}>{children}</Wrapper>
+const Seperator = () => {
+  return <Wrapper />
 }
 
 /*---> Styles <---*/
