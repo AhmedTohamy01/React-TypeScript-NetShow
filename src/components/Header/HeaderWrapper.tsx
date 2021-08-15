@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
+interface ChildrenType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const HeaderWrapper = ({ children, ...restProps }: defaultProps) => {
-  return <Wrapper {...restProps}>{children}</Wrapper>
+const HeaderWrapper = ({ children }: ChildrenType) => {
+  return <Wrapper>{children}</Wrapper>
 }
 
 /*---> Styles <---*/
