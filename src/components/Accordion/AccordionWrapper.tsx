@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
+interface propsType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const AccordionWrapper = ({ children, ...restProps }: defaultProps) => {
-  return <Wrapper {...restProps}>{children}</Wrapper>
+const AccordionWrapper = ({ children }: propsType) => {
+  return <Wrapper>{children}</Wrapper>
 }
 
 /*---> Styles <---*/
