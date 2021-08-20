@@ -1,15 +1,14 @@
-import React, { ReactNode } from 'react'
+import React  from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface propsType {
   src: string
   alt: string
 }
 
 /*---> Component <---*/
-const JumboImage = ({ children, ...restProps }: defaultProps) => {
-  return <Image {...restProps}>{children}</Image>
+const JumboImage = ({ src, alt }: propsType) => {
+  return <Image src={src} alt={alt}/>
 }
 
 /*---> Styles <---*/
