@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface propsType {
+  children?: string
 }
 
 /*---> Component <---*/
-const AccordionTitle = ({ children, ...restProps }: defaultProps) => {
-  return <Title {...restProps}>{children}</Title>
+const AccordionTitle = ({ children }: propsType) => {
+  return <Title>{children}</Title>
 }
 
 /*---> Styles <---*/
