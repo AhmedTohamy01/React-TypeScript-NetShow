@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface ChildrenType {
+interface PropsType {
   children?: string
 }
 
 /*---> Component <---*/
-const OptFormButton = ({ children }: ChildrenType) => {
+const OptFormButton = ({ children }: PropsType) => {
   return (
     <Wrapper>
       <a href='/signup'>

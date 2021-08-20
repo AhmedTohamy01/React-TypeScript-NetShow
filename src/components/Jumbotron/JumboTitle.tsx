@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface ChildrenType {
+interface PropsType {
   children?: string
 }
 
 /*---> Component <---*/
-const JumboTitle = ({ children }: ChildrenType) => {
+const JumboTitle = ({ children }: PropsType) => {
   return <Title>{children}</Title>
 }
 

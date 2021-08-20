@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface ChildrenType {
+interface PropsType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const Navbar = ({ children }: ChildrenType) => {
+const Navbar = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 

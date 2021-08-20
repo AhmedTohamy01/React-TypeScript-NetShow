@@ -7,11 +7,11 @@ import Logo from '../components/Header/Logo'
 import Navbar from '../components/Header/Navbar'
 import SigninButton from '../components/Header/SigninButton'
 
-type ChildrenType = {
+type PropsType = {
   children?: ReactNode
 }
 
-const HeaderCompound = ({ children }: ChildrenType) => {
+const HeaderCompound = ({ children }: PropsType) => {
   return (
     <>
       <HeaderWrapper>

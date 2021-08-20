@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface ChildrenType {
+interface PropsType {
   children?: string
 }
 
 /*---> Component <---*/
-const SigninButton = ({ children }: ChildrenType) => {
+const SigninButton = ({ children }: PropsType) => {
   return (
     <div>
       <Link href='/signin'>{children}</Link>

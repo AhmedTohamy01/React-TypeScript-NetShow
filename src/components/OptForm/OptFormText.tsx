@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
-interface ChildrenType {
+interface PropsType {
   children?: string
 }
 
 /*---> Component <---*/
-const OptFormText = ({ children }: ChildrenType) => {
+const OptFormText = ({ children }: PropsType) => {
   return <Text>{children}</Text>
 }
 

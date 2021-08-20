@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface ChildrenType {
+interface PropsType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const JumboWrapper = ({ children }: ChildrenType) => {
+const JumboWrapper = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
