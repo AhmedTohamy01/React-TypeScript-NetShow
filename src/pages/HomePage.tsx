@@ -4,6 +4,7 @@ import AccordionCompound from '../compounds/AccordionCompound'
 import HeaderCompound from '../compounds/HeaderCompound'
 import JumboCompound from '../compounds/JumboCompound'
 import OptFormCompound from '../compounds/OptFormCompound'
+import FooterCompound from '../compounds/FooterCompound'
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
       <AccordionCompound />
       <OptFormCompound />
       <Seperator />
+			<FooterCompound />
     </>
   )
 }
