@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface PropsType {
+  children?: string
 }
 
 /*---> Component <---*/
-const Warning = ({ children, ...restProps }: defaultProps) => {
-  return <SubTitle {...restProps}>{children}</SubTitle>
+const Warning = ({ children }: PropsType) => {
+  return <SubTitle>{children}</SubTitle>
 }
 
 /*---> Styles <---*/
