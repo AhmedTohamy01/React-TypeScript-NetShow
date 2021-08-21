@@ -1,13 +1,13 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
-  children?: ReactNode
+interface PropsType {
+  children?: string
 }
 
 /*---> Component <---*/
-const FeatureTitle = ({ children, ...restProps }: defaultProps) => {
-  return <Title {...restProps}>{children}</Title>
+const FeatureTitle = ({ children }: PropsType) => {
+  return <Title>{children}</Title>
 }
 
 /*---> Styles <---*/
