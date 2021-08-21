@@ -1,8 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
+interface PropsType {
+  type?: string
+  placeholder?: string
+  value?: string
+  autoComplete?: string
+  onChange?: ({ target }: { target: any }) => void
+}
+
 /*---> Component <---*/
-function SignFormWrapper() {
+function SignFormWInput(props: PropsType) {
   return <FormInput />
 }
 
@@ -18,4 +26,4 @@ export const FormInput = styled.input`
   margin-bottom: 20px;
 `
 
-export default SignFormWrapper
+export default SignFormWInput
