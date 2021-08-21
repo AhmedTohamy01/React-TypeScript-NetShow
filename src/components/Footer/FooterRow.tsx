@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface PropsType {
   children?: ReactNode
@@ -23,6 +23,6 @@ export const Wrapper = styled.div`
   @media (max-width: 500px) {
     grid-template-columns: 1fr 1fr;
   }
-`;
+`
 
-export default FooterRow;
+export default FooterRow
