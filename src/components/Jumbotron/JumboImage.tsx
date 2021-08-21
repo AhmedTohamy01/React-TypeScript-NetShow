@@ -1,13 +1,13 @@
 import React  from 'react'
 import styled from 'styled-components'
 
-interface propsType {
+interface PropsType {
   src: string
   alt: string
 }
 
 /*---> Component <---*/
-const JumboImage = ({ src, alt }: propsType) => {
+const JumboImage = ({ src, alt }: PropsType) => {
   return <Image src={src} alt={alt}/>
 }
 
