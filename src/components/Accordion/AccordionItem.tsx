@@ -2,18 +2,17 @@ import React, { useState, ReactNode } from 'react'
 import AccordionContext from './AccordionContext'
 import styled from 'styled-components'
 
-interface defaultProps {
+interface PropsType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const AccordionItem = ({ children, ...restProps }: defaultProps) => {
-  const [AccordionShow, setAccordionShow] = useState(false)
-  // const ContextData = [AccordionShow, setAccordionShow]
+const AccordionItem = ({ children }: PropsType) => {
+  const [AccordionShow, setAccordionShow] = useState<boolean>(false)
 
   return (
-    <AccordionContext.Provider value={[AccordionShow, setAccordionShow]}>
-      <Wrapper {...restProps}>{children}</Wrapper>
+    <AccordionContext.Provider value={{AccordionShow, setAccordionShow}}>
+      <Wrapper>{children}</Wrapper>
     </AccordionContext.Provider>
   )
 }
