@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface defaultProps {
+interface PropsType {
   children?: ReactNode
 }
 
 /*---> Component <---*/
-const FeatureWrapper = ({ children, ...restProps }: defaultProps) => {
-  return <Wrapper {...restProps}>{children}</Wrapper>
+const FeatureWrapper = ({ children }: PropsType) => {
+  return <Wrapper>{children}</Wrapper>
 }
 
 /*---> Styles <---*/
