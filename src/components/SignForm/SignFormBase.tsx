@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 interface PropsType {
   children?: ReactNode
+  onSubmit: (event: React.FormEvent) => void
+  method: string
 }
 
 /*---> Component <---*/
