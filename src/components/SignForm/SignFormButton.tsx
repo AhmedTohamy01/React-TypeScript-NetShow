@@ -3,10 +3,11 @@ import styled from 'styled-components'
 
 interface PropsType {
   children?: string
+	disabled: boolean
 }
 
 /*---> Component <---*/
-function SignFormBase({ children }: PropsType) {
+function SignFormButton({ children }: PropsType) {
   return <Button>{children}</Button>
 }
 
@@ -27,4 +28,4 @@ export const Button = styled.button`
   }
 `
 
-export default SignFormBase
+export default SignFormButton
