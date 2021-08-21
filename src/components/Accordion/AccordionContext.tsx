@@ -1,5 +1,11 @@
-import React, { createContext } from "react"
+import { createContext } from "react"
 
-const AccordionContext = React.createContext<any>([])
+interface AccordionContextInterface {
+  AccordionShow: boolean | null
+  setAccordionShow: (arg0: boolean) => void | null
+}
+
+const AccordionContext = createContext<AccordionContextInterface | null>(null)
 
 export default AccordionContext
+
