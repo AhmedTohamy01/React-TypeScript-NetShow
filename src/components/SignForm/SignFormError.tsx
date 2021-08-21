@@ -6,7 +6,7 @@ interface PropsType {
 }
 
 /*---> Component <---*/
-function SignFormWrapper({ children }: PropsType) {
+function SignFormError({ children }: PropsType) {
   return <Wrapper>{children}</Wrapper>
 }
 
@@ -20,4 +20,4 @@ export const Wrapper = styled.div`
   padding: 15px 20px;
 `
 
-export default SignFormWrapper
+export default SignFormError
