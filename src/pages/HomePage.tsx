@@ -14,6 +14,8 @@ const HomePage = () => {
       <Seperator />
       <JumboCompound />
       <AccordionCompound />
+      <OptFormCompound />
+      <Seperator />
     </>
   )
 }
