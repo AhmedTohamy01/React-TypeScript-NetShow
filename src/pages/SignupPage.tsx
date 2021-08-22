@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react'
-import { FirebaseContext } from '../context/FirbaseContext'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import firebase from '../lib/firebase.prod'
 import HeaderWrapper from '../components/Header/HeaderWrapper'
 import Navbar from '../components/Header/Navbar'
 import Logo from '../components/Header/Logo'
@@ -18,8 +18,6 @@ import Warning from '../components/Feature/Warning'
 
 function SignupPage() {
   const history = useHistory()
-  const firebase = useContext(FirebaseContext)
-
   const [firstName, setFirstName] = useState('')
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
@@ -33,29 +31,24 @@ function SignupPage() {
     firebase
       .auth()
       .createUserWithEmailAndPassword(emailAddress, password)
-      .then(
-        (result: {
-          user: {
-            updateProfile: (arg0: { displayName: string }) => Promise<any>
-          }
-        }) =>
-          result.user
-            .updateProfile({
-              displayName: firstName,
-            })
-            .then(() => {
-              setFirstName('')
-              setEmailAddress('')
-              setPassword('')
-              history.push('/browse')
-            })
+      .then((result: any) =>
+        result.user
+          .updateProfile({
+            displayName: firstName,
+          })
+          .then(() => {
+            setFirstName('')
+            setEmailAddress('')
+            setPassword('')
+            history.push('/browse')
+          })
       )
       .catch((error: Error) => setError(error.message))
   }
 
   function handleSigninClick() {
     history.push('/signin')
-		const HeaderElement: HTMLElement | null = document.getElementById('header')
+    const HeaderElement: HTMLElement | null = document.getElementById('header')
     HeaderElement?.scrollIntoView()
   }
 
