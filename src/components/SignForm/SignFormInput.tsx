@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { ReactNode }  from 'react'
+import { Children } from 'react'
 import styled from 'styled-components'
 
 interface PropsType {
+  children?: ReactNode
   type?: string
   placeholder?: string
   value?: string
@@ -10,8 +12,8 @@ interface PropsType {
 }
 
 /*---> Component <---*/
-function SignFormWInput(props: PropsType) {
-  return <FormInput />
+function SignFormWInput({ children, ...restProps }: PropsType) {
+  return <FormInput {...restProps}>{children}</FormInput>
 }
 
 /*---> Styles <---*/
