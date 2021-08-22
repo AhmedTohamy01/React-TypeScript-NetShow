@@ -4,12 +4,12 @@ import styled from 'styled-components'
 interface PropsType {
   children?: ReactNode
   onSubmit: (event: React.FormEvent) => void
-  method: string
+	method: 'POST'
 }
 
 /*---> Component <---*/
-function SignFormBase({ children }: PropsType) {
-  return <Form>{children}</Form>
+function SignFormBase({ children, ...restProps}: PropsType) {
+  return <Form {...restProps}>{children}</Form>
 }
 
 /*---> Styles <---*/
