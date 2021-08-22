@@ -1,5 +1,6 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import firebase from '../lib/firebase.prod'
 import HeaderWrapper from '../components/Header/HeaderWrapper'
 import Navbar from '../components/Header/Navbar'
 import Logo from '../components/Header/Logo'
@@ -14,7 +15,6 @@ import SignFormLink from '../components/SignForm/SignFormLink'
 import SignFormCaptcha from '../components/SignForm/SignFormCaptcha'
 import SignFormError from '../components/SignForm/SignFormError'
 import Warning from '../components/Feature/Warning'
-import firebase from '../lib/firebase.prod'
 
 function SigninPage() {
   const [emailAddress, setEmailAddress] = useState('')
