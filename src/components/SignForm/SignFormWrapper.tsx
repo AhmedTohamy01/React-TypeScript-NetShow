@@ -23,6 +23,7 @@ export const Wrapper = styled.div`
   max-width: 450px;
   padding: 60px 68px 40px;
   margin-bottom: 100px;
+	margin-top: -115px;
 
   @media (max-width: 550px) {
     padding: 40px 20px 40px;

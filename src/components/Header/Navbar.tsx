@@ -17,7 +17,7 @@ export const Wrapper = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 175px;
   margin-right: auto;
   margin-left: auto;
   /* border: solid red; */
