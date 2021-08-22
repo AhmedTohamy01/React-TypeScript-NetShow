@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { FirebaseContext } from '../context/FirbaseContext'
+import { useHistory } from 'react-router-dom'
 import HeaderWrapper from '../components/Header/HeaderWrapper'
 import Navbar from '../components/Header/Navbar'
 import Logo from '../components/Header/Logo'
@@ -14,14 +15,13 @@ import SignFormLink from '../components/SignForm/SignFormLink'
 import SignFormCaptcha from '../components/SignForm/SignFormCaptcha'
 import SignFormError from '../components/SignForm/SignFormError'
 import Warning from '../components/Feature/Warning'
-import { useHistory } from 'react-router-dom'
 
 function SigninPage() {
   const firebase = useContext(FirebaseContext)
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
-  let history = useHistory()
+  const history = useHistory()
 
   const IsInvalid = password === '' || emailAddress === ''
 
@@ -39,6 +39,12 @@ function SigninPage() {
       .catch((error: Error) => setError(error.message))
   }
 
+	function handleSignupClick() {
+    history.push('/signup')
+		const HeaderElement: HTMLElement | null = document.getElementById('header')
+    HeaderElement?.scrollIntoView()
+  }
+
   return (
     <>
       <HeaderWrapper>
@@ -48,7 +54,7 @@ function SigninPage() {
         <SignFormWrapper>
           <SignFormBase onSubmit={handleSubmit} method='POST'>
             <Warning>NOT official Netflix</Warning>
-            <SignFormTitle>Sign In</SignFormTitle>
+            <SignFormTitle>Sign in</SignFormTitle>
             {error ? <SignFormError>{error}</SignFormError> : null}
             <SignFormInput
               type='text'
@@ -66,7 +72,9 @@ function SigninPage() {
             <SignFormButton disabled={IsInvalid}>Sign In</SignFormButton>
             <SignFormText>
               New to Netflix?
-              <SignFormLink href='/signup'>Sign up now.</SignFormLink>
+              <SignFormLink onClick={handleSignupClick}>
+                Sign up now.
+              </SignFormLink>
             </SignFormText>
             <SignFormCaptcha>
               This page is protected by Google reCAPTCHA to ensure you are not a
