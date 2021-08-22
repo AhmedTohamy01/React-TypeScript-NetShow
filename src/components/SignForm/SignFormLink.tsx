@@ -3,17 +3,17 @@ import styled from 'styled-components'
 
 interface PropsType {
   children?: string
-	href: string
+	onClick?: () => void
 }
 
 
 /*---> Component <---*/
-function SignFormLink({ children }: PropsType) {
-  return <Link>{children}</Link>
+function SignFormLink({ children, ...restProps }: PropsType) {
+  return <Link {...restProps}>{children}</Link>
 }
 
 /*---> Styles <---*/
-export const Link = styled.a`
+export const Link = styled.span`
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
