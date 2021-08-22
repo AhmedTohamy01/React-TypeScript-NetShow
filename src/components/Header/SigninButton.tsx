@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
+import { useHistory } from 'react-router-dom'
 
 interface PropsType {
   children?: string
@@ -7,15 +8,17 @@ interface PropsType {
 
 /*---> Component <---*/
 const SigninButton = ({ children }: PropsType) => {
-  return (
-    <div>
-      <Link href='/signin'>{children}</Link>
-    </div>
-  )
+  const history = useHistory()
+
+  function handleClick() {
+    history.push('/signin')
+  }
+
+  return <LinkButton onClick={handleClick}>{children}</LinkButton>
 }
 
 /*---> Styles <---*/
-export const Link = styled.a`
+export const LinkButton = styled.div`
   display: block;
   background-color: #e50914;
   width: 84px;

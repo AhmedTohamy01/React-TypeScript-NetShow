@@ -12,6 +12,7 @@ const Navbar = ({ children }: PropsType) => {
 
 /*---> Styles <---*/
 export const Wrapper = styled.nav`
+  /* border: 1px solid green; */
   max-width: 1850px;
   width: 100%;
   display: flex;

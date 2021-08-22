@@ -7,7 +7,7 @@ interface PropsType {
 
 /*---> Component <---*/
 const HeaderWrapper = ({ children }: PropsType) => {
-  return <Wrapper>{children}</Wrapper>
+  return <Wrapper id='header'>{children}</Wrapper>
 }
 
 /*---> Styles <---*/
