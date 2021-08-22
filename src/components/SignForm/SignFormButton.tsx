@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 interface PropsType {
   children?: string
-	disabled: boolean
+  disabled: boolean
+  type: 'submit'
 }
 
 /*---> Component <---*/
