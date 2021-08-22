@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react'
-import { FirebaseContext } from '../context/FirbaseContext'
 import { useHistory } from 'react-router-dom'
 import HeaderWrapper from '../components/Header/HeaderWrapper'
 import Navbar from '../components/Header/Navbar'
@@ -15,9 +14,9 @@ import SignFormLink from '../components/SignForm/SignFormLink'
 import SignFormCaptcha from '../components/SignForm/SignFormCaptcha'
 import SignFormError from '../components/SignForm/SignFormError'
 import Warning from '../components/Feature/Warning'
+import firebase from '../lib/firebase.prod'
 
 function SigninPage() {
-  const firebase = useContext(FirebaseContext)
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -27,6 +26,7 @@ function SigninPage() {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
+
     firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
@@ -39,9 +39,9 @@ function SigninPage() {
       .catch((error: Error) => setError(error.message))
   }
 
-	function handleSignupClick() {
+  function handleSignupClick() {
     history.push('/signup')
-		const HeaderElement: HTMLElement | null = document.getElementById('header')
+    const HeaderElement: HTMLElement | null = document.getElementById('header')
     HeaderElement?.scrollIntoView()
   }
 
@@ -69,7 +69,9 @@ function SigninPage() {
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
-            <SignFormButton disabled={IsInvalid}>Sign In</SignFormButton>
+            <SignFormButton disabled={IsInvalid} type='submit'>
+              Sign In
+            </SignFormButton>
             <SignFormText>
               New to Netflix?
               <SignFormLink onClick={handleSignupClick}>
