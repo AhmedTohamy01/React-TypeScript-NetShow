@@ -7,8 +7,8 @@ interface PropsType {
 }
 
 /*---> Component <---*/
-function SignFormButton({ children }: PropsType) {
-  return <Button>{children}</Button>
+function SignFormButton({ children, ...restProps }: PropsType) {
+  return <Button {...restProps}>{children}</Button>
 }
 
 /*---> Styles <---*/
