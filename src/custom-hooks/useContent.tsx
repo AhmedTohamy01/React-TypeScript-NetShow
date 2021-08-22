@@ -1,8 +1,15 @@
 import { useEffect, useState } from 'react'
 import firebase from '../lib/firebase.prod'
 
+interface contentTypes {
+  docId?: string
+  genre?: string
+  title?: string
+  data?: any[]
+}
+
 function useContent(target: string) {
-  const [content, setContent] = useState<object[]>([])
+  const [content, setContent] = useState<contentTypes[]>([])
 
   useEffect(() => {
     firebase
