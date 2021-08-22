@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useHistory } from 'react-router-dom'
 
 interface PropsType {
   children?: string
@@ -7,12 +8,18 @@ interface PropsType {
 
 /*---> Component <---*/
 const OptFormButton = ({ children }: PropsType) => {
+  const history = useHistory()
+
+	function handleClick() {
+    history.push('/signup')
+		const HeaderElement: HTMLElement | null = document.getElementById('header')
+    HeaderElement?.scrollIntoView()
+  }
+
   return (
-    <Wrapper>
-      <a href='/signup'>
+    <Wrapper onClick={handleClick}>
         {children}
         <img src='../images/icons/chevron-right.png' alt='Try Now' />
-      </a>
     </Wrapper>
   )
 }
