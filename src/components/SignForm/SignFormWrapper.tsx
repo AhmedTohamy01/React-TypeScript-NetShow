@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface PropsType {
   children?: ReactNode
@@ -12,6 +12,7 @@ function SignFormWrapper({ children }: PropsType) {
 
 /*---> Styles <---*/
 export const Wrapper = styled.div`
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   min-height: 570px;
@@ -27,6 +28,6 @@ export const Wrapper = styled.div`
     padding: 40px 20px 40px;
     min-height: 500px;
   }
-`;
+`
 
-export default SignFormWrapper;
+export default SignFormWrapper
