@@ -11,7 +11,7 @@ const OptFormButton = ({ children }: PropsType) => {
   const history = useHistory()
 
 	function handleClick() {
-    history.push('/signup')
+    history.push('/browse')
 		const HeaderElement: HTMLElement | null = document.getElementById('header')
     HeaderElement?.scrollIntoView()
   }
