@@ -3,11 +3,12 @@ import styled from 'styled-components'
 
 interface PropsType {
   children: ReactNode
+	id: string
 }
 
 /*---> Component <---*/
-function AllSlidesWrapper({ children }: PropsType) {
-  return <Wrapper>{children}</Wrapper>
+function AllSlidesWrapper({ children, ...restProps }: PropsType) {
+  return <Wrapper {...restProps}>{children}</Wrapper>
 }
 
 /*---> Styles <---*/
