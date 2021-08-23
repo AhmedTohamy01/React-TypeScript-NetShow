@@ -21,6 +21,9 @@ const App = () => {
         <Route path='/browse'>
           <BrowsePage />
         </Route>
+        <Route>
+          <HomePage />
+        </Route>
       </Switch>
     </Router>
   )
