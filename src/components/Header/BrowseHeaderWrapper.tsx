@@ -12,7 +12,7 @@ function BrowseHeaderWrapper({ children }: PropsType) {
 
 /*---> Styles <---*/
 export const Wrapper = styled.div`
-  background: url('/images/misc/irishman.jpg');
+  background: url('/images/misc/joker1.jpg');
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
