@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import useContent from '../custom-hooks/useContent'
 import BrowseHeaderWrapper from '../components/Header/BrowseHeaderWrapper'
 import BrowseNavbar from '../components/Header/BrowseNavbar'
@@ -21,6 +21,8 @@ import CardFeatureClose from '../components/Movies/CardFeatureClose'
 import PlayerVideo from '../components/Movies/PlayerVideo'
 import PlayerOverlay from '../components/Movies/PlayerOverlay'
 import FooterCompound from '../compounds/FooterCompound'
+import Loader from 'react-loader-spinner'
+import SpinnerWrapper from '../components/Movies/SpinnerWrapper'
 
 function BrowsePage() {
   let { series } = useContent('series')
@@ -43,7 +45,7 @@ function BrowsePage() {
       data: series.filter((item) => item.genre === 'feel-good'),
     },
   ]
-	console.log('series', series)
+
   let { films } = useContent('films')
   films = [
     { title: 'Drama', data: films.filter((item) => item.genre === 'drama') },
@@ -64,7 +66,6 @@ function BrowsePage() {
       data: films.filter((item) => item.genre === 'romance'),
     },
   ]
-		console.log('films', films)
 
   const [category, setCategory] = useState('films')
   const currentCategory = category === 'films' ? films : series
@@ -74,16 +75,43 @@ function BrowsePage() {
     slug: string
     title: string
     description: string
-  }>({genre: '', slug: '', title: '', description: ''})
+  }>({ genre: '', slug: '', title: '', description: '' })
   const [showPlayer, setShowPlayer] = useState(false)
-	console.log('activeItem', activeItem)
+  const [loading, setLoading] = useState(true)
+
+  function handleFilmsClick() {
+    setCategory('films')
+    const element = document.getElementById('movies')
+    element?.scrollIntoView()
+  }
+
+  function handleSeriesClick() {
+    setCategory('series')
+    const element = document.getElementById('movies')
+    element?.scrollIntoView()
+  }
+
+  useEffect(() => {
+    if (series[0].data!.length > 1) {
+      setLoading(false)
+    }
+  }, [series])
+
+  if (loading) {
+    return (
+      <SpinnerWrapper>
+        <Loader type='ThreeDots' color='white' height={100} width={100} />
+      </SpinnerWrapper>
+    )
+  }
+
   return (
     <>
       <BrowseHeaderWrapper>
         <BrowseNavbar>
           <Logo />
-          <HeaderLink onClick={() => setCategory('films')}>Films</HeaderLink>
-          <HeaderLink onClick={() => setCategory('series')}>Series</HeaderLink>
+          <HeaderLink onClick={handleFilmsClick}>Films</HeaderLink>
+          <HeaderLink onClick={handleSeriesClick}>Series</HeaderLink>
         </BrowseNavbar>
         <FeatureWrapperBrowse>
           <FeatureTitleBrowse>Watch Joker Now</FeatureTitleBrowse>
@@ -103,7 +131,7 @@ function BrowsePage() {
         </FeatureWrapperBrowse>
       </BrowseHeaderWrapper>
 
-      <AllSlidesWrapper>
+      <AllSlidesWrapper id='movies'>
         {currentCategory.map((slideItem) => (
           <SlideWrapper key={`${category}-${slideItem.title?.toLowerCase()}`}>
             <SlideTitle>{slideItem.title!}</SlideTitle>
