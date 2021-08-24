@@ -114,7 +114,7 @@ function BrowsePage() {
           <HeaderLink onClick={handleSeriesClick}>Series</HeaderLink>
         </BrowseNavbar>
         <FeatureWrapperBrowse>
-          <FeatureTitleBrowse>Watch Joker Now</FeatureTitleBrowse>
+          <FeatureTitleBrowse>Watch Patman Now</FeatureTitleBrowse>
           <FeatureSubTitleBrowse>
             Forever alone in a crowd, failed comedian Arthur Fleck seeks
             connection as he walks the streets of Gotham City. Arthur wears two
