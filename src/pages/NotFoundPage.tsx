@@ -6,7 +6,7 @@ const NotFoundPage = () => {
   return (
     <>
       <Wrapper>
-        <img src='/sorry.png' width='240px' />
+        <img src='/sorry.png' width='240px' alt='little girl' />
         404 | This page could not be found.
       </Wrapper>
     </>
