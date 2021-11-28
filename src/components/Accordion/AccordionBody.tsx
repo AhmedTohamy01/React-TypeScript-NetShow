@@ -11,8 +11,6 @@ const AccordionBody = ({ children }: PropsType) => {
   ) : null
 }
 
-export default AccordionBody
-
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   background: #303030;
@@ -29,3 +27,5 @@ export const Wrapper = styled.div`
 interface PropsType {
   children?: string
 }
+
+export default AccordionBody

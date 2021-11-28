@@ -13,8 +13,6 @@ const AccordionItem = ({ children }: PropsType) => {
   )
 }
 
-export default AccordionItem
-
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   margin-bottom: 10px;
@@ -24,3 +22,5 @@ export const Wrapper = styled.div`
 interface PropsType {
   children?: ReactNode
 }
+
+export default AccordionItem

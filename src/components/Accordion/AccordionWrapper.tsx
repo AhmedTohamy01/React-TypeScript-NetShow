@@ -6,8 +6,6 @@ const AccordionWrapper = ({ children }: propsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
-export default AccordionWrapper
-
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   max-width: 815px;
@@ -26,3 +24,5 @@ export const Wrapper = styled.div`
 interface propsType {
   children?: ReactNode
 }
+
+export default AccordionWrapper

@@ -24,8 +24,6 @@ const AccordionHeader = ({ children }: PropsType) => {
   )
 }
 
-export default AccordionHeader
-
 /*---> Styles <---*/
 export const Wrapper = styled.div`
   background: #303030;
@@ -58,3 +56,5 @@ export const Image = styled.img`
 interface PropsType {
   children?: string
 }
+
+export default AccordionHeader
