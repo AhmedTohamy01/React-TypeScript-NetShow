@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children: string
-}
-
 /*---> Component <---*/
 function CardDescription({ children }: PropsType) {
   return <Wrapper>{children}</Wrapper>
@@ -17,5 +13,10 @@ export const Wrapper = styled.div`
   font-size: 18px;
   font-weight: 500;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children: string
+}
 
 export default CardDescription

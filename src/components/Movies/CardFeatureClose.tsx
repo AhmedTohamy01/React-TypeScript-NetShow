@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  onClick: () => void
-}
-
 /*---> Component <---*/
-function CardFeatureClose({ ...restProps }: PropsType) {
+const CardFeatureClose = ({ ...restProps }: PropsType) => {
   return (
     <Button {...restProps}>
       <img src='../images/icons/close.png' alt='Close' />
@@ -30,5 +26,11 @@ export const Button = styled.button`
     width: 24px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  onClick: () => void
+}
+
 
 export default CardFeatureClose

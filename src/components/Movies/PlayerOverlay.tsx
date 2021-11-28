@@ -1,13 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children: ReactNode
-  onClick: () => void
-}
-
 /*---> Component <---*/
-function PlayerOverlay({ children, ...restProps }: PropsType) {
+const PlayerOverlay = ({ children, ...restProps }: PropsType) => {
   return <Wrapper {...restProps}>{children}</Wrapper>
 }
 
@@ -23,5 +18,11 @@ export const Wrapper = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children: ReactNode
+  onClick: () => void
+}
 
 export default PlayerOverlay

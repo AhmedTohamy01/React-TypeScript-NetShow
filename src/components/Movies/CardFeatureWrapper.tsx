@@ -1,15 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children: ReactNode
-	style: {
-		backgroundImage: string
-	}
-}
-
 /*---> Component <---*/
-function CardFeatureWrapper({ children, ...restProps }: PropsType) {
+const CardFeatureWrapper = ({ children, ...restProps }: PropsType) => {
   return <Wrapper {...restProps}>{children}</Wrapper>
 }
 
@@ -23,5 +16,13 @@ export const Wrapper = styled.div`
   background-color: black;
   padding-top: 30px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children: ReactNode
+  style: {
+    backgroundImage: string
+  }
+}
 
 export default CardFeatureWrapper
