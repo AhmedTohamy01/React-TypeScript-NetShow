@@ -25,6 +25,7 @@ import SpinnerWrapper from '../components/Movies/SpinnerWrapper'
 import seriesData from '../data/series.json'
 import filmsData from '../data/films.json'
 
+/*---> Component <---*/
 const BrowsePage = () => {
   let series: MovieType[] = seriesData
   series = [

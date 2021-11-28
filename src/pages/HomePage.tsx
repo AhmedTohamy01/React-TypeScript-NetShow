@@ -6,6 +6,7 @@ import JumboCompound from '../compounds/JumboCompound'
 import OptFormCompound from '../compounds/OptFormCompound'
 import FooterCompound from '../compounds/FooterCompound'
 
+/*---> Component <---*/
 const HomePage = () => {
   return (
     <>

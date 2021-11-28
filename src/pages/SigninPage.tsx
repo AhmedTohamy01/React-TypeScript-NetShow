@@ -16,6 +16,7 @@ import SignFormCaptcha from '../components/SignForm/SignFormCaptcha'
 import SignFormError from '../components/SignForm/SignFormError'
 import Warning from '../components/Feature/Warning'
 
+/*---> Component <---*/
 const SigninPage = () => {
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
