@@ -1,9 +1,5 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-
-interface PropsType {
-  children?: string
-}
 
 /*---> Component <---*/
 const JumboSubTitle = ({ children }: PropsType) => {
@@ -28,5 +24,10 @@ export const SubTitle = styled.h2`
     text-align: center;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default JumboSubTitle
