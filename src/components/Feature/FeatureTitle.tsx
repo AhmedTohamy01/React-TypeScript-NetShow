@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 const FeatureTitle = ({ children }: PropsType) => {
   return <Title>{children}</Title>
@@ -22,5 +18,10 @@ export const Title = styled.h1`
     font-size: 30px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default FeatureTitle

@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children: string
-}
-
 /*---> Component <---*/
-function FeatureSubTitleBrowse({ children }: PropsType) {
+const FeatureSubTitleBrowse = ({ children }: PropsType) => {
   return <SubTitle>{children}</SubTitle>
 }
 
@@ -22,5 +18,10 @@ export const SubTitle = styled.h2`
     font-size: 18px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children: string
+}
 
 export default FeatureSubTitleBrowse
