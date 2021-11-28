@@ -26,63 +26,59 @@ import seriesData from '../data/series.json'
 import filmsData from '../data/films.json'
 
 function BrowsePage() {
-  let series: any = seriesData
+  let series: MovieType[] = seriesData
   series = [
     {
       title: 'Documentaries',
-      data: series.filter((item: any) => item.genre === 'documentaries'),
+      data: series.filter((item) => item.genre === 'documentaries'),
     },
     {
       title: 'Comedies',
-      data: series.filter((item: any) => item.genre === 'comedies'),
+      data: series.filter((item) => item.genre === 'comedies'),
     },
     {
       title: 'Children',
-      data: series.filter((item: any) => item.genre === 'children'),
+      data: series.filter((item) => item.genre === 'children'),
     },
     {
       title: 'Crime',
-      data: series.filter((item: any) => item.genre === 'crime'),
+      data: series.filter((item) => item.genre === 'crime'),
     },
     {
       title: 'Feel-Good',
-      data: series.filter((item: any) => item.genre === 'feel-good'),
+      data: series.filter((item) => item.genre === 'feel-good'),
     },
   ]
+  console.log('series2', series)
 
-  let films: any = filmsData
+  let films: MovieType[] = filmsData
   films = [
     {
       title: 'Drama',
-      data: films.filter((item: any) => item.genre === 'drama'),
+      data: films.filter((item) => item.genre === 'drama'),
     },
     {
       title: 'Thriller',
-      data: films.filter((item: any) => item.genre === 'thriller'),
+      data: films.filter((item) => item.genre === 'thriller'),
     },
     {
       title: 'Children',
-      data: films.filter((item: any) => item.genre === 'children'),
+      data: films.filter((item) => item.genre === 'children'),
     },
     {
       title: 'Suspense',
-      data: films.filter((item: any) => item.genre === 'suspense'),
+      data: films.filter((item) => item.genre === 'suspense'),
     },
     {
       title: 'Romance',
-      data: films.filter((item: any) => item.genre === 'romance'),
+      data: films.filter((item) => item.genre === 'romance'),
     },
   ]
 
   const [category, setCategory] = useState('films')
   const currentCategory = category === 'films' ? films : series
   const [showCardFeature, setShowCardFeature] = useState(false)
-  const [activeItem, setActiveItem] = useState<{
-    genre: string
-    slug: string
-    title: string
-    description: string
-  }>({ genre: '', slug: '', title: '', description: '' })
+  const [activeItem, setActiveItem] = useState<MovieType>({})
   const [showPlayer, setShowPlayer] = useState(false)
   const [loading, setLoading] = useState(true)
 
@@ -139,12 +135,12 @@ function BrowsePage() {
       </BrowseHeaderWrapper>
 
       <AllSlidesWrapper id='movies'>
-        {currentCategory.map((slideItem: any) => (
+        {currentCategory.map((slideItem) => (
           <SlideWrapper key={`${category}-${slideItem.title?.toLowerCase()}`}>
             <SlideTitle>{slideItem.title!}</SlideTitle>
             <AllCardsWrapper>
-              {slideItem.data?.map((cardItem: any) => (
-                <CardWrapper key={cardItem.docId}>
+              {slideItem.data?.map((cardItem) => (
+                <CardWrapper key={cardItem.docId!}>
                   <CardImage
                     onClick={() => {
                       setShowCardFeature(true)
@@ -162,8 +158,8 @@ function BrowsePage() {
                   backgroundImage: `url(../images/${category}/${activeItem.genre}/${activeItem.slug}/large.jpg)`,
                 }}
               >
-                <CardTitle>{activeItem.title}</CardTitle>
-                <CardDescription>{activeItem.description}</CardDescription>
+                <CardTitle>{activeItem.title!}</CardTitle>
+                <CardDescription>{activeItem.description!}</CardDescription>
                 <CardFeatureClose onClick={() => setShowCardFeature(false)} />
                 <PlayButton onClick={() => setShowPlayer(true)}>
                   Play
@@ -184,3 +180,16 @@ function BrowsePage() {
 }
 
 export default BrowsePage
+
+
+/*---> Interfaces <---*/
+interface MovieType {
+  description?: string
+  docId?: string
+  genre?: string
+  id?: string
+  maturity?: string
+  slug?: string
+  title?: string
+  data?: MovieType[]
+}
