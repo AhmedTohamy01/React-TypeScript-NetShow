@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 /*---> Component <---*/
-function FooterTitle({ children }: PropsType) {
+const FooterTitle = ({ children }: PropsType) => {
   return <Link href='#'>{children}</Link>
 }
 

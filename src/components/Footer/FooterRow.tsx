@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
 /*---> Component <---*/
-function FooterRow({ children }: PropsType) {
+const FooterRow = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
