@@ -5,7 +5,7 @@ import FooterRow from "../components/Footer/FooterRow";
 import FooterColumn from "../components/Footer/FooterColumn";
 import FooterLink from "../components/Footer/FooterLink";
 
-function FooterCompound() {
+const FooterCompound = () => {
   return (
     <FooterWrapper>
       <FooterTitle>Questions? Contact us.</FooterTitle>
