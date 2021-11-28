@@ -3,7 +3,7 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 // 1) when seeding the database you'll have to uncomment this!
-// import { seedDatabase } from '../seed';
+// import { seedDatabase } from '../data/seed';
 
 interface ConfigTypes {
   apiKey: string | undefined
