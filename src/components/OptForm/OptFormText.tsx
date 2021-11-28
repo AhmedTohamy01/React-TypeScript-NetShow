@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 const OptFormText = ({ children }: PropsType) => {
   return <Text>{children}</Text>
@@ -17,5 +13,10 @@ export const Text = styled.p`
   text-align: center;
   padding: 0 20px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default OptFormText
