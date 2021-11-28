@@ -1,227 +1,227 @@
 [
-    {
-        "title": "Man on Wire",
-        "slug": "man-on-wire",
-        "description": "Filmmaker James Marsh masterfully recreates high-wire daredevil Philippe Petit's 1974 stunt walking on a wire across the Twin Towers.",
-        "genre": "documentaries",
-        "maturity": "12",
-        "id": "f7d78128-9445-4224-8cb0-299cebf95076",
-        "docId": "3zQJvtJ5Ynds3ZG7n1LQ"
-    },
-    {
-        "description": "The Bluth family, once a prominent name in the business, loses everything after the head patriarch gets convicted for fraud.",
-        "slug": "arrested-development",
-        "title": "Arrested Development",
-        "id": "d3db8f7d-e914-4657-96a1-73db9f4b77a0",
-        "genre": "comedies",
-        "maturity": "15",
-        "docId": "78GkhuOw0RSAIcOcp1P2"
-    },
-    {
-        "title": "The Office",
-        "description": "A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.",
-        "maturity": "15",
-        "genre": "comedies",
-        "slug": "the-office",
-        "id": "b1b30dc2-a3de-4371-8da8-ab673145c3ce",
-        "docId": "7VgG4JE9jvljlghHEbAm"
-    },
-    {
-        "title": "South Park",
-        "genre": "comedies",
-        "id": "575a8e7c-7653-4b36-a61f-e31a557c566b",
-        "maturity": "15",
-        "slug": "south-park",
-        "description": "Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.",
-        "docId": "9Nn2LLLXmfkHdT6LG9Rt"
-    },
-    {
-        "id": "64e4d209-a2cd-4edb-ab47-c5b334234b6d",
-        "genre": "children",
-        "title": "Dora The Explorer",
-        "slug": "dora-the-explorer",
-        "description": "Dora, a seven-year-old girl of Latin American descent, embarks upon numerous adventures in the wilderness with her friend Boots, a monkey, and a variety of fun and useful tools.",
-        "maturity": "0",
-        "docId": "AmawUZRtlHZ2Q35unj61"
-    },
-    {
-        "id": "f070f79f-eced-4ec0-b4e9-053dd953c299",
-        "title": "Super Size Me",
-        "genre": "documentaries",
-        "maturity": "12",
-        "slug": "super-size-me",
-        "description": "Director Morgan Spurlock's social experiment in fast-food gastronomy sees him attempting to subsist uniquely on food from the McDonalds",
-        "docId": "Eqq7kxLuyp3J8NVrj0sG"
-    },
-    {
-        "maturity": "0",
-        "id": "a19c542e-d475-43f9-8414-8487552c0ada",
-        "slug": "arthur",
-        "description": "Bespectacled aardvark Arthur Read demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies.",
-        "genre": "children",
-        "title": "Arthur",
-        "docId": "NH7y5ZWscCpsm9ISvUau"
-    },
-    {
-        "maturity": "18",
-        "id": "b6cda842-7baf-472a-858f-a06b5263b5d1",
-        "genre": "documentaries",
-        "title": "Tiger King",
-        "slug": "tiger-king",
-        "description": "An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.",
-        "docId": "NkaIrp6ewK4qcdOTYmer"
-    },
-    {
-        "slug": "paw-patrol",
-        "description": "Six brave puppies, captained by a tech-savvy ten-year-old boy, Ryder, work together to accomplish high-stakes rescue missions to safeguard the residents of the Adventure Bay community.",
-        "title": "PAW Patrol",
-        "maturity": "0",
-        "genre": "children",
-        "id": "12fe23e9-e035-4860-8fe4-eed3e7ef57fc",
-        "docId": "PcXqa5lVlIePIQDJ7BiH"
-    },
-    {
-        "maturity": "12",
-        "description": "Dewey Finn, an amateur rock enthusiast, slyly takes up his friend's substitute teacher's job. Bearing no qualifications for it, he instead starts training the students to form a band.",
-        "id": "ead12cae-236b-4dc6-ba83-208c2cc313ad",
-        "slug": "school-of-rock",
-        "title": "School of Rock",
-        "genre": "feel-good",
-        "docId": "Qs09JvxkeyElaT6VyuBG"
-    },
-    {
-        "description": "Larry David, a famous television writer and producer, gets into various misadventures with his friends and celebrity colleagues in Los Angeles.",
-        "title": "Curb Your Enthusiasm",
-        "slug": "curb-your-enthusiasm",
-        "id": "d26c6801-8758-4041-bf90-9a40abf2cb8f",
-        "genre": "comedies",
-        "maturity": "15",
-        "docId": "SUWXldLjkh9ooyC69XUq"
-    },
-    {
-        "maturity": "12",
-        "genre": "feel-good",
-        "id": "4c8dc70c-4715-4457-828f-41b874842966",
-        "slug": "good-will-hunting",
-        "title": "Good Will Hunting",
-        "description": "Will Hunting, a genius in mathematics, solves all the difficult mathematical problems. When he faces an emotional crisis, he takes help from psychiatrist Dr Sean Maguireto, who helps him recover.",
-        "docId": "W0NbujoKxdBgjvpzoBTH"
-    },
-    {
-        "maturity": "12",
-        "title": "Amanda Knox",
-        "genre": "documentaries",
-        "id": "9ea1553a-5f35-496c-a42f-6035500d98ea",
-        "slug": "amanda-knox",
-        "description": "Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.",
-        "docId": "Z0EsTy0v1Ay2OdPnIXAl"
-    },
-    {
-        "id": "c85bd732-0716-4583-bd6c-a41d498bbe28",
-        "genre": "crime",
-        "title": "The Confession Killer",
-        "slug": "the-confession-killer",
-        "maturity": "18",
-        "description": "Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson, although his sentence would be commuted to life in prison in 1998.",
-        "docId": "a9cKkNUeEBHLigKMPPk7"
-    },
-    {
-        "genre": "feel-good",
-        "maturity": "12",
-        "slug": "forrest-gump",
-        "description": "Forrest Gump, a man with a low IQ, joins the army for service where he meets Dan and Bubba. However, he cannot stop thinking about his childhood sweetheart Jenny Curran, whose life is messed up.",
-        "title": "Forrest Gump",
-        "id": "b4a968fb-bb50-49c2-b5d2-0d533faeb240",
-        "docId": "dk6hDCXYr76lFKfKgngT"
-    },
-    {
-        "maturity": "15",
-        "slug": "family-guy",
-        "genre": "comedies",
-        "description": "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
-        "title": "Family Guy",
-        "id": "325d179e-ce0c-4f09-8708-833b95249b31",
-        "docId": "jhTiu5bbkYxcyxDijZXY"
-    },
-    {
-        "genre": "children",
-        "maturity": "0",
-        "id": "4e7ba3ba-8a5f-4e20-ad75-d2f48388c7e8",
-        "slug": "peppa-pig",
-        "description": "Peppa, an outgoing preschool pig, participates in many energetic activities. She learns something new every day and has a lot of fun with her family and friends.",
-        "title": "Peppa Pig",
-        "docId": "kVltuPJPSMXNKUdvr3TS"
-    },
-    {
-        "genre": "feel-good",
-        "title": "Midnight In Paris",
-        "slug": "midnight-in-paris",
-        "maturity": "12",
-        "description": "Gil arrives with his fiancee and her family in Paris for a vacation, even as he tries to finish his debut novel. He is beguiled by the city, which takes him to a time past, away from his fiancee.",
-        "id": "63e24933-d8f6-4395-a4b0-6248babacce4",
-        "docId": "nLVmsAOI1xjKgjFBEyMK"
-    },
-    {
-        "id": "188d47cf-d7c3-47b8-8f48-b1aab7cc23de",
-        "slug": "long-shot",
-        "title": "Long Shot",
-        "maturity": "18",
-        "genre": "crime",
-        "description": "An innocent man is accused of murder, leading his attorney on a wild chase to confirm his alibi using raw footage from a television show.",
-        "docId": "qKuksAdfrZ23YayE4HHF"
-    },
-    {
-        "title": "The Staircase",
-        "genre": "crime",
-        "maturity": "18",
-        "description": "In 2001 novelist Michael Peterson's wife died, and he claimed she perished after falling down stairs at their home. The medical examiner, however, determined that she had been beaten with a weapon",
-        "id": "ddcfa12c-4e26-4cda-99ba-e194671d5b3b",
-        "slug": "the-staircase",
-        "docId": "qv4VWV30LW6q1pjxr0O7"
-    },
-    {
-        "maturity": "18",
-        "description": "Exonerated after spending nearly two decades in prison for a crime he did not commit, Steven Avery filed suit against Manitowoc County, Wis., and several individuals involved with his arrest.",
-        "genre": "crime",
-        "slug": "making-a-murderer",
-        "title": "Making a Murderer",
-        "id": "4e99c312-c8ea-4877-b6e3-c68fed6b74c7",
-        "docId": "tieeo9X7wvIK6fevxbIq"
-    },
-    {
-        "id": "ae6c6eb7-2ed9-42d8-b4b0-90f668d57bd1",
-        "description": "A yellow sea sponge named SpongeBob SquarePants lives in the city of Bikini Bottom deep in the Pacific Ocean. ",
-        "slug": "spongebob",
-        "title": "SpongeBob",
-        "maturity": "0",
-        "genre": "children",
-        "docId": "ua1CXHSkQoiXGjF5G1aH"
-    },
-    {
-        "slug": "the-innocent-man",
-        "id": "395bcaad-8076-4416-b19c-d7b51c902b54",
-        "maturity": "18",
-        "genre": "crime",
-        "title": "The Innocent Man",
-        "description": "Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.",
-        "docId": "xHpSmkJrrMHy01OQnLJN"
-    },
-    {
-        "description": "Social misfit Juno protects herself with a caustic wit, but her unplanned pregnancy has the teen getting more involved in the lives of her baby's adoptive parents than she expected.",
-        "id": "d0d43df5-e188-4a5e-9172-87bf9f9bd2c9",
-        "genre": "feel-good",
-        "title": "Juno",
-        "slug": "juno",
-        "maturity": "12",
-        "docId": "y36LvxScEoRprVIr7dA4"
-    },
-    {
-        "title": "Citizenfour",
-        "id": "3cc81145-7234-4f77-8465-2846966f43c7",
-        "maturity": "12",
-        "genre": "documentaries",
-        "description": "Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.",
-        "slug": "citizenfour",
-        "docId": "zKCfbeyyP3grqAmtaPqP"
-    }
+  {
+    "title": "Man on Wire",
+    "slug": "man-on-wire",
+    "description": "Filmmaker James Marsh masterfully recreates high-wire daredevil Philippe Petit's 1974 stunt walking on a wire across the Twin Towers.",
+    "genre": "documentaries",
+    "maturity": "12",
+    "id": "f7d78128-9445-4224-8cb0-299cebf95076",
+    "docId": "3zQJvtJ5Ynds3ZG7n1LQ"
+  },
+  {
+    "description": "The Bluth family, once a prominent name in the business, loses everything after the head patriarch gets convicted for fraud.",
+    "slug": "arrested-development",
+    "title": "Arrested Development",
+    "id": "d3db8f7d-e914-4657-96a1-73db9f4b77a0",
+    "genre": "comedies",
+    "maturity": "15",
+    "docId": "78GkhuOw0RSAIcOcp1P2"
+  },
+  {
+    "title": "The Office",
+    "description": "A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.",
+    "maturity": "15",
+    "genre": "comedies",
+    "slug": "the-office",
+    "id": "b1b30dc2-a3de-4371-8da8-ab673145c3ce",
+    "docId": "7VgG4JE9jvljlghHEbAm"
+  },
+  {
+    "title": "South Park",
+    "genre": "comedies",
+    "id": "575a8e7c-7653-4b36-a61f-e31a557c566b",
+    "maturity": "15",
+    "slug": "south-park",
+    "description": "Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.",
+    "docId": "9Nn2LLLXmfkHdT6LG9Rt"
+  },
+  {
+    "id": "64e4d209-a2cd-4edb-ab47-c5b334234b6d",
+    "genre": "children",
+    "title": "Dora The Explorer",
+    "slug": "dora-the-explorer",
+    "description": "Dora, a seven-year-old girl of Latin American descent, embarks upon numerous adventures in the wilderness with her friend Boots, a monkey, and a variety of fun and useful tools.",
+    "maturity": "0",
+    "docId": "AmawUZRtlHZ2Q35unj61"
+  },
+  {
+    "id": "f070f79f-eced-4ec0-b4e9-053dd953c299",
+    "title": "Super Size Me",
+    "genre": "documentaries",
+    "maturity": "12",
+    "slug": "super-size-me",
+    "description": "Director Morgan Spurlock's social experiment in fast-food gastronomy sees him attempting to subsist uniquely on food from the McDonalds",
+    "docId": "Eqq7kxLuyp3J8NVrj0sG"
+  },
+  {
+    "maturity": "0",
+    "id": "a19c542e-d475-43f9-8414-8487552c0ada",
+    "slug": "arthur",
+    "description": "Bespectacled aardvark Arthur Read demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies.",
+    "genre": "children",
+    "title": "Arthur",
+    "docId": "NH7y5ZWscCpsm9ISvUau"
+  },
+  {
+    "maturity": "18",
+    "id": "b6cda842-7baf-472a-858f-a06b5263b5d1",
+    "genre": "documentaries",
+    "title": "Tiger King",
+    "slug": "tiger-king",
+    "description": "An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.",
+    "docId": "NkaIrp6ewK4qcdOTYmer"
+  },
+  {
+    "slug": "paw-patrol",
+    "description": "Six brave puppies, captained by a tech-savvy ten-year-old boy, Ryder, work together to accomplish high-stakes rescue missions to safeguard the residents of the Adventure Bay community.",
+    "title": "PAW Patrol",
+    "maturity": "0",
+    "genre": "children",
+    "id": "12fe23e9-e035-4860-8fe4-eed3e7ef57fc",
+    "docId": "PcXqa5lVlIePIQDJ7BiH"
+  },
+  {
+    "maturity": "12",
+    "description": "Dewey Finn, an amateur rock enthusiast, slyly takes up his friend's substitute teacher's job. Bearing no qualifications for it, he instead starts training the students to form a band.",
+    "id": "ead12cae-236b-4dc6-ba83-208c2cc313ad",
+    "slug": "school-of-rock",
+    "title": "School of Rock",
+    "genre": "feel-good",
+    "docId": "Qs09JvxkeyElaT6VyuBG"
+  },
+  {
+    "description": "Larry David, a famous television writer and producer, gets into various misadventures with his friends and celebrity colleagues in Los Angeles.",
+    "title": "Curb Your Enthusiasm",
+    "slug": "curb-your-enthusiasm",
+    "id": "d26c6801-8758-4041-bf90-9a40abf2cb8f",
+    "genre": "comedies",
+    "maturity": "15",
+    "docId": "SUWXldLjkh9ooyC69XUq"
+  },
+  {
+    "maturity": "12",
+    "genre": "feel-good",
+    "id": "4c8dc70c-4715-4457-828f-41b874842966",
+    "slug": "good-will-hunting",
+    "title": "Good Will Hunting",
+    "description": "Will Hunting, a genius in mathematics, solves all the difficult mathematical problems. When he faces an emotional crisis, he takes help from psychiatrist Dr Sean Maguireto, who helps him recover.",
+    "docId": "W0NbujoKxdBgjvpzoBTH"
+  },
+  {
+    "maturity": "12",
+    "title": "Amanda Knox",
+    "genre": "documentaries",
+    "id": "9ea1553a-5f35-496c-a42f-6035500d98ea",
+    "slug": "amanda-knox",
+    "description": "Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.",
+    "docId": "Z0EsTy0v1Ay2OdPnIXAl"
+  },
+  {
+    "id": "c85bd732-0716-4583-bd6c-a41d498bbe28",
+    "genre": "crime",
+    "title": "The Confession Killer",
+    "slug": "the-confession-killer",
+    "maturity": "18",
+    "description": "Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson, although his sentence would be commuted to life in prison in 1998.",
+    "docId": "a9cKkNUeEBHLigKMPPk7"
+  },
+  {
+    "genre": "feel-good",
+    "maturity": "12",
+    "slug": "forrest-gump",
+    "description": "Forrest Gump, a man with a low IQ, joins the army for service where he meets Dan and Bubba. However, he cannot stop thinking about his childhood sweetheart Jenny Curran, whose life is messed up.",
+    "title": "Forrest Gump",
+    "id": "b4a968fb-bb50-49c2-b5d2-0d533faeb240",
+    "docId": "dk6hDCXYr76lFKfKgngT"
+  },
+  {
+    "maturity": "15",
+    "slug": "family-guy",
+    "genre": "comedies",
+    "description": "Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.",
+    "title": "Family Guy",
+    "id": "325d179e-ce0c-4f09-8708-833b95249b31",
+    "docId": "jhTiu5bbkYxcyxDijZXY"
+  },
+  {
+    "genre": "children",
+    "maturity": "0",
+    "id": "4e7ba3ba-8a5f-4e20-ad75-d2f48388c7e8",
+    "slug": "peppa-pig",
+    "description": "Peppa, an outgoing preschool pig, participates in many energetic activities. She learns something new every day and has a lot of fun with her family and friends.",
+    "title": "Peppa Pig",
+    "docId": "kVltuPJPSMXNKUdvr3TS"
+  },
+  {
+    "genre": "feel-good",
+    "title": "Midnight In Paris",
+    "slug": "midnight-in-paris",
+    "maturity": "12",
+    "description": "Gil arrives with his fiancee and her family in Paris for a vacation, even as he tries to finish his debut novel. He is beguiled by the city, which takes him to a time past, away from his fiancee.",
+    "id": "63e24933-d8f6-4395-a4b0-6248babacce4",
+    "docId": "nLVmsAOI1xjKgjFBEyMK"
+  },
+  {
+    "id": "188d47cf-d7c3-47b8-8f48-b1aab7cc23de",
+    "slug": "long-shot",
+    "title": "Long Shot",
+    "maturity": "18",
+    "genre": "crime",
+    "description": "An innocent man is accused of murder, leading his attorney on a wild chase to confirm his alibi using raw footage from a television show.",
+    "docId": "qKuksAdfrZ23YayE4HHF"
+  },
+  {
+    "title": "The Staircase",
+    "genre": "crime",
+    "maturity": "18",
+    "description": "In 2001 novelist Michael Peterson's wife died, and he claimed she perished after falling down stairs at their home. The medical examiner, however, determined that she had been beaten with a weapon",
+    "id": "ddcfa12c-4e26-4cda-99ba-e194671d5b3b",
+    "slug": "the-staircase",
+    "docId": "qv4VWV30LW6q1pjxr0O7"
+  },
+  {
+    "maturity": "18",
+    "description": "Exonerated after spending nearly two decades in prison for a crime he did not commit, Steven Avery filed suit against Manitowoc County, Wis., and several individuals involved with his arrest.",
+    "genre": "crime",
+    "slug": "making-a-murderer",
+    "title": "Making a Murderer",
+    "id": "4e99c312-c8ea-4877-b6e3-c68fed6b74c7",
+    "docId": "tieeo9X7wvIK6fevxbIq"
+  },
+  {
+    "id": "ae6c6eb7-2ed9-42d8-b4b0-90f668d57bd1",
+    "description": "A yellow sea sponge named SpongeBob SquarePants lives in the city of Bikini Bottom deep in the Pacific Ocean. ",
+    "slug": "spongebob",
+    "title": "SpongeBob",
+    "maturity": "0",
+    "genre": "children",
+    "docId": "ua1CXHSkQoiXGjF5G1aH"
+  },
+  {
+    "slug": "the-innocent-man",
+    "id": "395bcaad-8076-4416-b19c-d7b51c902b54",
+    "maturity": "18",
+    "genre": "crime",
+    "title": "The Innocent Man",
+    "description": "Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.",
+    "docId": "xHpSmkJrrMHy01OQnLJN"
+  },
+  {
+    "description": "Social misfit Juno protects herself with a caustic wit, but her unplanned pregnancy has the teen getting more involved in the lives of her baby's adoptive parents than she expected.",
+    "id": "d0d43df5-e188-4a5e-9172-87bf9f9bd2c9",
+    "genre": "feel-good",
+    "title": "Juno",
+    "slug": "juno",
+    "maturity": "12",
+    "docId": "y36LvxScEoRprVIr7dA4"
+  },
+  {
+    "title": "Citizenfour",
+    "id": "3cc81145-7234-4f77-8465-2846966f43c7",
+    "maturity": "12",
+    "genre": "documentaries",
+    "description": "Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.",
+    "slug": "citizenfour",
+    "docId": "zKCfbeyyP3grqAmtaPqP"
+  }
 ]
