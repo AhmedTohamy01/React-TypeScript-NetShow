@@ -5,6 +5,7 @@ import SigninPage from './pages/SigninPage'
 import SignupPage from './pages/SignupPage'
 import BrowsePage from './pages/BrowsePage'
 
+/*---> Component <---*/
 const App = () => {
   return (
     <Router>
