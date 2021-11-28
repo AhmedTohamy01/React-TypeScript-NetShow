@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import useContent from '../custom-hooks/useContent'
 import BrowseHeaderWrapper from '../components/Header/BrowseHeaderWrapper'
 import BrowseNavbar from '../components/Header/BrowseNavbar'
 import Logo from '../components/Header/Logo'
@@ -23,47 +22,55 @@ import PlayerOverlay from '../components/Movies/PlayerOverlay'
 import FooterCompound from '../compounds/FooterCompound'
 import Loader from 'react-loader-spinner'
 import SpinnerWrapper from '../components/Movies/SpinnerWrapper'
+import seriesData from '../data/series.json'
+import filmsData from '../data/films.json'
 
 function BrowsePage() {
-  let { series } = useContent('series')
+  let series: any = seriesData
   series = [
     {
       title: 'Documentaries',
-      data: series.filter((item) => item.genre === 'documentaries'),
+      data: series.filter((item: any) => item.genre === 'documentaries'),
     },
     {
       title: 'Comedies',
-      data: series.filter((item) => item.genre === 'comedies'),
+      data: series.filter((item: any) => item.genre === 'comedies'),
     },
     {
       title: 'Children',
-      data: series.filter((item) => item.genre === 'children'),
+      data: series.filter((item: any) => item.genre === 'children'),
     },
-    { title: 'Crime', data: series.filter((item) => item.genre === 'crime') },
+    {
+      title: 'Crime',
+      data: series.filter((item: any) => item.genre === 'crime'),
+    },
     {
       title: 'Feel-Good',
-      data: series.filter((item) => item.genre === 'feel-good'),
+      data: series.filter((item: any) => item.genre === 'feel-good'),
     },
   ]
 
-  let { films } = useContent('films')
+  let films: any = filmsData
   films = [
-    { title: 'Drama', data: films.filter((item) => item.genre === 'drama') },
+    {
+      title: 'Drama',
+      data: films.filter((item: any) => item.genre === 'drama'),
+    },
     {
       title: 'Thriller',
-      data: films.filter((item) => item.genre === 'thriller'),
+      data: films.filter((item: any) => item.genre === 'thriller'),
     },
     {
       title: 'Children',
-      data: films.filter((item) => item.genre === 'children'),
+      data: films.filter((item: any) => item.genre === 'children'),
     },
     {
       title: 'Suspense',
-      data: films.filter((item) => item.genre === 'suspense'),
+      data: films.filter((item: any) => item.genre === 'suspense'),
     },
     {
       title: 'Romance',
-      data: films.filter((item) => item.genre === 'romance'),
+      data: films.filter((item: any) => item.genre === 'romance'),
     },
   ]
 
@@ -132,11 +139,11 @@ function BrowsePage() {
       </BrowseHeaderWrapper>
 
       <AllSlidesWrapper id='movies'>
-        {currentCategory.map((slideItem) => (
+        {currentCategory.map((slideItem: any) => (
           <SlideWrapper key={`${category}-${slideItem.title?.toLowerCase()}`}>
             <SlideTitle>{slideItem.title!}</SlideTitle>
             <AllCardsWrapper>
-              {slideItem.data?.map((cardItem) => (
+              {slideItem.data?.map((cardItem: any) => (
                 <CardWrapper key={cardItem.docId}>
                   <CardImage
                     onClick={() => {
