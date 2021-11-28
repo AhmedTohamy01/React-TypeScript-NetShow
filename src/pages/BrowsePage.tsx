@@ -25,7 +25,7 @@ import SpinnerWrapper from '../components/Movies/SpinnerWrapper'
 import seriesData from '../data/series.json'
 import filmsData from '../data/films.json'
 
-function BrowsePage() {
+const BrowsePage = () => {
   let series: MovieType[] = seriesData
   series = [
     {
@@ -82,13 +82,13 @@ function BrowsePage() {
   const [showPlayer, setShowPlayer] = useState(false)
   const [loading, setLoading] = useState(true)
 
-  function handleFilmsClick() {
+  const handleFilmsClick = () => {
     setCategory('films')
     const element = document.getElementById('movies')
     element?.scrollIntoView()
   }
 
-  function handleSeriesClick() {
+  const handleSeriesClick = () => {
     setCategory('series')
     const element = document.getElementById('movies')
     element?.scrollIntoView()
@@ -180,7 +180,6 @@ function BrowsePage() {
 }
 
 export default BrowsePage
-
 
 /*---> Interfaces <---*/
 interface MovieType {
