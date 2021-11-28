@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 function FooterTitle({ children }: PropsType) {
   return <Link href='#'>{children}</Link>
@@ -16,5 +12,10 @@ export const Link = styled.a`
   color: #757575;
   margin-bottom: 50px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default FooterTitle
