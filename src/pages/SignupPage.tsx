@@ -16,7 +16,7 @@ import SignFormCaptcha from '../components/SignForm/SignFormCaptcha'
 import SignFormError from '../components/SignForm/SignFormError'
 import Warning from '../components/Feature/Warning'
 
-function SignupPage() {
+const SignupPage = () => {
   const history = useHistory()
   const [firstName, setFirstName] = useState('')
   const [emailAddress, setEmailAddress] = useState('')
@@ -25,7 +25,7 @@ function SignupPage() {
 
   const IsInvalid = password === '' || emailAddress === '' || firstName === ''
 
-  function handleSubmit(event: React.FormEvent) {
+  const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault()
 
     firebase
@@ -46,7 +46,7 @@ function SignupPage() {
       .catch((error: Error) => setError(error.message))
   }
 
-  function handleSigninClick() {
+  const handleSigninClick = () => {
     history.push('/signin')
     const HeaderElement: HTMLElement | null = document.getElementById('header')
     HeaderElement?.scrollIntoView()
