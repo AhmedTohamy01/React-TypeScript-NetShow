@@ -1,16 +1,12 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
-
-interface PropsType {
-  children?: string
-}
 
 /*---> Component <---*/
 const SigninButton = ({ children }: PropsType) => {
   const history = useHistory()
 
-  function handleClick() {
+  const handleClick = () => {
     history.push('/signin')
   }
 
@@ -30,5 +26,10 @@ export const LinkButton = styled.div`
   padding: 8px 17px;
   cursor: pointer;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default SigninButton
