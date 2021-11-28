@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
-function SignFormError({ children }: PropsType) {
+const SignFormError = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
@@ -19,5 +15,10 @@ export const Wrapper = styled.div`
   color: white;
   padding: 15px 20px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default SignFormError

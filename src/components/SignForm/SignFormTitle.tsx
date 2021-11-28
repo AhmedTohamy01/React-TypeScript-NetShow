@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
-function SignFormTitle({ children }: PropsType) {
+const SignFormTitle = ({ children }: PropsType) => {
   return <Title>{children}</Title>
 }
 
@@ -17,5 +13,10 @@ export const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 28px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default SignFormTitle

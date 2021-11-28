@@ -1,14 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-  disabled: boolean
-  type: 'submit'
-}
-
 /*---> Component <---*/
-function SignFormButton({ children, ...restProps }: PropsType) {
+const SignFormButton = ({ children, ...restProps }: PropsType) => {
   return <Button {...restProps}>{children}</Button>
 }
 
@@ -28,5 +22,12 @@ export const Button = styled.button`
     opacity: 0.3;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+  disabled: boolean
+  type: 'submit'
+}
 
 export default SignFormButton

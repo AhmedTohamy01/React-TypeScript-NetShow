@@ -1,12 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
-function SignFormWrapper({ children }: PropsType) {
+const SignFormWrapper = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
@@ -23,12 +19,17 @@ export const Wrapper = styled.div`
   max-width: 450px;
   padding: 60px 68px 40px;
   margin-bottom: 100px;
-	margin-top: -115px;
+  margin-top: -115px;
 
   @media (max-width: 550px) {
     padding: 40px 20px 40px;
     min-height: 500px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+}
 
 export default SignFormWrapper

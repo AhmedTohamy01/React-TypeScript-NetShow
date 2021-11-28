@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
-function SignFormCaptcha({ children }: PropsType) {
+const SignFormCaptcha = ({ children }: PropsType) => {
   return <Text>{children}</Text>
 }
 
@@ -17,5 +13,10 @@ export const Text = styled.p`
   line-height: normal;
   color: #8c8c8c;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default SignFormCaptcha
