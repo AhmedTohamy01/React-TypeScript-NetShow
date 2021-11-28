@@ -7,6 +7,7 @@ import Logo from '../components/Header/Logo'
 import Navbar from '../components/Header/Navbar'
 import SigninButton from '../components/Header/SigninButton'
 
+/*---> Component <---*/
 const HeaderCompound = ({ children }: PropsType) => {
   return (
     <>
@@ -25,9 +26,9 @@ const HeaderCompound = ({ children }: PropsType) => {
   )
 }
 
-export default HeaderCompound
-
 /*---> Interfaces <---*/
 interface PropsType {
   children?: ReactNode
 }
+
+export default HeaderCompound

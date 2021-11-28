@@ -5,6 +5,7 @@ import FooterRow from "../components/Footer/FooterRow";
 import FooterColumn from "../components/Footer/FooterColumn";
 import FooterLink from "../components/Footer/FooterLink";
 
+/*---> Component <---*/
 const FooterCompound = () => {
   return (
     <FooterWrapper>

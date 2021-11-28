@@ -6,6 +6,7 @@ import AccordionHeader from '../components/Accordion/AccordionHeader'
 import AccordionBody from '../components/Accordion/AccordionBody'
 import FAQData from '../data/faqs.json'
 
+/*---> Component <---*/
 const AccordionCompound = () => {
   return (
     <>

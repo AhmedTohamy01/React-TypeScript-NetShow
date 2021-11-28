@@ -9,6 +9,7 @@ import JumboImage from '../components/Jumbotron/JumboImage'
 import JumboData from '../data/jumbo.json'
 import Seperator from '../components/Seperator/Seperator'
 
+/*---> Component <---*/
 const JumboCompound = () => {
   return (
     <>
