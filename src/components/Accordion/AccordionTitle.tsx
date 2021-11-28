@@ -10,6 +10,8 @@ const AccordionTitle = ({ children }: propsType) => {
   return <Title>{children}</Title>
 }
 
+export default AccordionTitle
+
 /*---> Styles <---*/
 export const Title = styled.h1`
   font-size: 50px;
@@ -23,5 +25,3 @@ export const Title = styled.h1`
     font-size: 25px;
   }
 `
-
-export default AccordionTitle

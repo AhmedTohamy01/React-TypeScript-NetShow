@@ -2,10 +2,6 @@ import React, { useContext } from 'react'
 import AccordionContext from './AccordionContext'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 const AccordionBody = ({ children }: PropsType) => {
   const accordionContextValue = useContext(AccordionContext)
@@ -14,6 +10,8 @@ const AccordionBody = ({ children }: PropsType) => {
     <Wrapper>{children}</Wrapper>
   ) : null
 }
+
+export default AccordionBody
 
 /*---> Styles <---*/
 export const Wrapper = styled.div`
@@ -27,4 +25,7 @@ export const Wrapper = styled.div`
   }
 `
 
-export default AccordionBody
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
