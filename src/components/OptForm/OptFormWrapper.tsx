@@ -1,10 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
 const OptFormWrapper = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
@@ -23,5 +19,10 @@ export const Wrapper = styled.div`
     align-items: center;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+}
 
 export default OptFormWrapper

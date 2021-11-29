@@ -1,12 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
-function BrowseHeaderWrapper({ children }: PropsType) {
+const BrowseHeaderWrapper = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
@@ -22,5 +18,10 @@ export const Wrapper = styled.div`
     padding: 15px 20px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+}
 
 export default BrowseHeaderWrapper

@@ -1,12 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
-function FooterRow({ children }: PropsType) {
+const FooterRow = ({ children }: PropsType) => {
   return <Wrapper>{children}</Wrapper>
 }
 
@@ -24,5 +20,11 @@ export const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+}
+
 
 export default FooterRow

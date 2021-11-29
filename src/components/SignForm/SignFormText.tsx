@@ -1,12 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string | ReactNode
-}
-
 /*---> Component <---*/
-function SignFormText({ children }: PropsType) {
+const SignFormText = ({ children }: PropsType) => {
   return <Text>{children}</Text>
 }
 
@@ -16,5 +12,10 @@ export const Text = styled.p`
   font-size: 16px;
   font-weight: 500;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string | ReactNode
+}
 
 export default SignFormText

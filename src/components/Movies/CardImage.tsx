@@ -1,13 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  onClick: () => void
-	src: string
-}
-
 /*---> Component <---*/
-function CardImage({ ...restProps }: PropsType) {
+const CardImage = ({ ...restProps }: PropsType) => {
   return <Image {...restProps} />
 }
 
@@ -20,5 +15,11 @@ export const Image = styled.img`
   height: auto;
   padding: 0 5px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  onClick: () => void
+  src: string
+}
 
 export default CardImage

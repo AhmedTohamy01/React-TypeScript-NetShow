@@ -1,14 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-	onClick?: () => void
-}
-
-
 /*---> Component <---*/
-function SignFormLink({ children, ...restProps }: PropsType) {
+const SignFormLink = ({ children, ...restProps }: PropsType) => {
   return <Link {...restProps}>{children}</Link>
 }
 
@@ -25,5 +19,11 @@ export const Link = styled.span`
     text-decoration: underline;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+  onClick?: () => void
+}
 
 export default SignFormLink

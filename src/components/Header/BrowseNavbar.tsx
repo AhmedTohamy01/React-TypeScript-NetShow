@@ -1,10 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
 function BrowseNavbar({ children }: PropsType) {
   return <Wrapper>{children}</Wrapper>
@@ -21,4 +17,10 @@ export const Wrapper = styled.nav`
   margin-left: auto;
 `
 
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+}
+
 export default BrowseNavbar
+

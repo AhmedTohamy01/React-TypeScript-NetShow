@@ -1,10 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface propsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
 const AccordionWrapper = ({ children }: propsType) => {
   return <Wrapper>{children}</Wrapper>
@@ -23,5 +19,10 @@ export const Wrapper = styled.div`
     padding: 70px 20px;
   }
 `
+
+/*---> Interfaces <---*/
+interface propsType {
+  children?: ReactNode
+}
 
 export default AccordionWrapper

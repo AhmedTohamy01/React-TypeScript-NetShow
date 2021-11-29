@@ -1,14 +1,8 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-  onSubmit: (event: React.FormEvent) => void
-	method: 'POST'
-}
-
 /*---> Component <---*/
-function SignFormBase({ children, ...restProps}: PropsType) {
+const SignFormBase = ({ children, ...restProps}: PropsType) => {
   return <Form {...restProps}>{children}</Form>
 }
 
@@ -19,5 +13,12 @@ export const Form = styled.form`
   max-width: 450px;
   width: 100%;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+  onSubmit: (event: React.FormEvent) => void
+  method: 'POST'
+}
 
 export default SignFormBase

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import useContent from '../custom-hooks/useContent'
 import BrowseHeaderWrapper from '../components/Header/BrowseHeaderWrapper'
 import BrowseNavbar from '../components/Header/BrowseNavbar'
 import Logo from '../components/Header/Logo'
@@ -23,9 +22,12 @@ import PlayerOverlay from '../components/Movies/PlayerOverlay'
 import FooterCompound from '../compounds/FooterCompound'
 import Loader from 'react-loader-spinner'
 import SpinnerWrapper from '../components/Movies/SpinnerWrapper'
+import seriesData from '../data/series.json'
+import filmsData from '../data/films.json'
 
-function BrowsePage() {
-  let { series } = useContent('series')
+/*---> Component <---*/
+const BrowsePage = () => {
+  let series: MovieType[] = seriesData
   series = [
     {
       title: 'Documentaries',
@@ -39,16 +41,23 @@ function BrowsePage() {
       title: 'Children',
       data: series.filter((item) => item.genre === 'children'),
     },
-    { title: 'Crime', data: series.filter((item) => item.genre === 'crime') },
+    {
+      title: 'Crime',
+      data: series.filter((item) => item.genre === 'crime'),
+    },
     {
       title: 'Feel-Good',
       data: series.filter((item) => item.genre === 'feel-good'),
     },
   ]
+  console.log('series2', series)
 
-  let { films } = useContent('films')
+  let films: MovieType[] = filmsData
   films = [
-    { title: 'Drama', data: films.filter((item) => item.genre === 'drama') },
+    {
+      title: 'Drama',
+      data: films.filter((item) => item.genre === 'drama'),
+    },
     {
       title: 'Thriller',
       data: films.filter((item) => item.genre === 'thriller'),
@@ -70,22 +79,17 @@ function BrowsePage() {
   const [category, setCategory] = useState('films')
   const currentCategory = category === 'films' ? films : series
   const [showCardFeature, setShowCardFeature] = useState(false)
-  const [activeItem, setActiveItem] = useState<{
-    genre: string
-    slug: string
-    title: string
-    description: string
-  }>({ genre: '', slug: '', title: '', description: '' })
+  const [activeItem, setActiveItem] = useState<MovieType>({})
   const [showPlayer, setShowPlayer] = useState(false)
   const [loading, setLoading] = useState(true)
 
-  function handleFilmsClick() {
+  const handleFilmsClick = () => {
     setCategory('films')
     const element = document.getElementById('movies')
     element?.scrollIntoView()
   }
 
-  function handleSeriesClick() {
+  const handleSeriesClick = () => {
     setCategory('series')
     const element = document.getElementById('movies')
     element?.scrollIntoView()
@@ -137,7 +141,7 @@ function BrowsePage() {
             <SlideTitle>{slideItem.title!}</SlideTitle>
             <AllCardsWrapper>
               {slideItem.data?.map((cardItem) => (
-                <CardWrapper key={cardItem.docId}>
+                <CardWrapper key={cardItem.docId!}>
                   <CardImage
                     onClick={() => {
                       setShowCardFeature(true)
@@ -155,8 +159,8 @@ function BrowsePage() {
                   backgroundImage: `url(../images/${category}/${activeItem.genre}/${activeItem.slug}/large.jpg)`,
                 }}
               >
-                <CardTitle>{activeItem.title}</CardTitle>
-                <CardDescription>{activeItem.description}</CardDescription>
+                <CardTitle>{activeItem.title!}</CardTitle>
+                <CardDescription>{activeItem.description!}</CardDescription>
                 <CardFeatureClose onClick={() => setShowCardFeature(false)} />
                 <PlayButton onClick={() => setShowPlayer(true)}>
                   Play
@@ -177,3 +181,15 @@ function BrowsePage() {
 }
 
 export default BrowsePage
+
+/*---> Interfaces <---*/
+interface MovieType {
+  description?: string
+  docId?: string
+  genre?: string
+  id?: string
+  maturity?: string
+  slug?: string
+  title?: string
+  data?: MovieType[]
+}

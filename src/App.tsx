@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import SigninPage from './pages/SigninPage'
 import SignupPage from './pages/SignupPage'
 import BrowsePage from './pages/BrowsePage'
+import NotFoundPage from './pages/NotFoundPage'
 
+/*---> Component <---*/
 const App = () => {
   return (
     <Router>
@@ -21,8 +23,8 @@ const App = () => {
         <Route path='/browse'>
           <BrowsePage />
         </Route>
-        <Route>
-          <HomePage />
+        <Route path='*'>
+          <NotFoundPage />
         </Route>
       </Switch>
     </Router>

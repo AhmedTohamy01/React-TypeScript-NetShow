@@ -1,10 +1,5 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-
-interface PropsType {
-  children: string
-  onClick: () => void
-}
 
 /*---> Component <---*/
 function HeaderLink({ children, ...restProps }: PropsType) {
@@ -19,5 +14,11 @@ export const Wrapper = styled.div`
   cursor: pointer;
   font-weight: normal;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children: string
+  onClick: () => void
+}
 
 export default HeaderLink

@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children: string
-}
-
 /*---> Component <---*/
-function CardTitle({ children }: PropsType) {
+const CardTitle = ({ children }: PropsType) => {
   return <Title>{children}</Title>
 }
 
@@ -18,5 +14,11 @@ export const Title = styled.h1`
   font-weight: 500;
   margin-bottom: 30px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children: string
+}
+
 
 export default CardTitle

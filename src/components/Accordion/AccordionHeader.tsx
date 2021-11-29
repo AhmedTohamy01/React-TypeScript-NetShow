@@ -2,15 +2,11 @@ import React, { useContext } from 'react'
 import AccordionContext from './AccordionContext'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 const AccordionHeader = ({ children }: PropsType) => {
 	const accordionContextValue = useContext(AccordionContext)
 
-  function handleClick() {
+  const handleClick = () => {
     accordionContextValue?.setAccordionShow(
       !accordionContextValue.AccordionShow
     )
@@ -55,5 +51,10 @@ export const Image = styled.img`
     width: 16px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default AccordionHeader

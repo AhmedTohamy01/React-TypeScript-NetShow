@@ -1,10 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 const Warning = ({ children }: PropsType) => {
   return <SubTitle>{children}</SubTitle>
@@ -24,5 +20,10 @@ export const SubTitle = styled.h2`
     font-size: 18px;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default Warning

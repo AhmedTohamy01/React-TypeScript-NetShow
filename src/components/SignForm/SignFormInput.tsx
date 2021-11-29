@@ -1,18 +1,8 @@
 import React, { ReactNode }  from 'react'
-import { Children } from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-  type?: string
-  placeholder?: string
-  value?: string
-  autoComplete?: string
-  onChange?: ({ target }: { target: any }) => void
-}
-
 /*---> Component <---*/
-function SignFormWInput({ children, ...restProps }: PropsType) {
+const SignFormWInput = ({ children, ...restProps }: PropsType) => {
   return <FormInput {...restProps}>{children}</FormInput>
 }
 
@@ -27,5 +17,15 @@ export const FormInput = styled.input`
   padding: 5px 20px;
   margin-bottom: 20px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+  type?: string
+  placeholder?: string
+  value?: string
+  autoComplete?: string
+  onChange?: ({ target }: { target: any }) => void
+}
 
 export default SignFormWInput

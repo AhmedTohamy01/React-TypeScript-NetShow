@@ -1,13 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-interface PropsType {
-  children: string
-  onClick: () => void
-}
-
 /*---> Component <---*/
-function PlayButton({ children, ...restProps }: PropsType) {
+const PlayButton = ({ children, ...restProps }: PropsType) => {
   return <Button {...restProps}>{children}</Button>
 }
 
@@ -33,5 +28,10 @@ export const Button = styled.button`
     color: white;
   }
 `
+/*---> Interfaces <---*/
+interface PropsType {
+  children: string
+  onClick: () => void
+}
 
 export default PlayButton

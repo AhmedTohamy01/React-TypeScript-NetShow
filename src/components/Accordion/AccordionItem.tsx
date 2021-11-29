@@ -2,10 +2,6 @@ import React, { useState, ReactNode } from 'react'
 import AccordionContext from './AccordionContext'
 import styled from 'styled-components'
 
-interface PropsType {
-  children?: ReactNode
-}
-
 /*---> Component <---*/
 const AccordionItem = ({ children }: PropsType) => {
   const [AccordionShow, setAccordionShow] = useState<boolean>(false)
@@ -21,5 +17,10 @@ const AccordionItem = ({ children }: PropsType) => {
 export const Wrapper = styled.div`
   margin-bottom: 10px;
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: ReactNode
+}
 
 export default AccordionItem

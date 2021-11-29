@@ -2,15 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
 
-interface PropsType {
-  children?: string
-}
-
 /*---> Component <---*/
 const OptFormButton = ({ children }: PropsType) => {
   const history = useHistory()
 
-	function handleClick() {
+	const handleClick = () => {
     history.push('/browse')
 		const HeaderElement: HTMLElement | null = document.getElementById('header')
     HeaderElement?.scrollIntoView()
@@ -59,5 +55,10 @@ export const Wrapper = styled.div`
     font-weight: bold;
   }
 `
+
+/*---> Interfaces <---*/
+interface PropsType {
+  children?: string
+}
 
 export default OptFormButton

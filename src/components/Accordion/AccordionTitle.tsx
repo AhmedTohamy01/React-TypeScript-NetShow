@@ -1,9 +1,5 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-
-interface propsType {
-  children?: string
-}
 
 /*---> Component <---*/
 const AccordionTitle = ({ children }: propsType) => {
@@ -23,5 +19,10 @@ export const Title = styled.h1`
     font-size: 25px;
   }
 `
+
+/*---> Interfaces <---*/
+interface propsType {
+  children?: string
+}
 
 export default AccordionTitle

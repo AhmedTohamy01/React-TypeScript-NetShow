@@ -16,7 +16,8 @@ import SignFormCaptcha from '../components/SignForm/SignFormCaptcha'
 import SignFormError from '../components/SignForm/SignFormError'
 import Warning from '../components/Feature/Warning'
 
-function SigninPage() {
+/*---> Component <---*/
+const SigninPage = () => {
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -39,7 +40,7 @@ function SigninPage() {
       .catch((error: Error) => setError(error.message))
   }
 
-  function handleSignupClick() {
+  const handleSignupClick = () => {
     history.push('/signup')
     const HeaderElement: HTMLElement | null = document.getElementById('header')
     HeaderElement?.scrollIntoView()
