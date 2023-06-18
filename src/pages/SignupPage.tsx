@@ -61,7 +61,7 @@ const SignupPage = () => {
         </Navbar>
         <SignFormWrapper>
           <SignFormBase onSubmit={handleSubmit} method='POST'>
-            <Warning>NOT official Netflix</Warning>
+            <Warning>NOT official NetShow</Warning>
             <SignFormTitle>Sign up</SignFormTitle>
             {error ? <SignFormError>{error}</SignFormError> : null}
             <SignFormInput

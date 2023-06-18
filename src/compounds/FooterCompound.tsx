@@ -27,7 +27,7 @@ const FooterCompound = () => {
           <FooterLink>Account</FooterLink>
           <FooterLink>Ways to Watch</FooterLink>
           <FooterLink>Corporate Information</FooterLink>
-          <FooterLink>Netflix Originals</FooterLink>
+          <FooterLink>NetShow Originals</FooterLink>
         </FooterColumn>
         <FooterColumn>
           <FooterLink>Media Center</FooterLink>
@@ -36,7 +36,7 @@ const FooterCompound = () => {
         </FooterColumn>
       </FooterRow>
     </FooterWrapper>
-  );
+  )
 }
 
 export default FooterCompound;

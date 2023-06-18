@@ -54,7 +54,7 @@ const SigninPage = () => {
         </Navbar>
         <SignFormWrapper>
           <SignFormBase onSubmit={handleSubmit} method='POST'>
-            <Warning>NOT official Netflix</Warning>
+            <Warning>NOT official NetShow</Warning>
             <SignFormTitle>Sign in</SignFormTitle>
             {error ? <SignFormError>{error}</SignFormError> : null}
             <SignFormInput
@@ -74,7 +74,7 @@ const SigninPage = () => {
               Sign In
             </SignFormButton>
             <SignFormText>
-              New to Netflix?
+              New to NetShow?
               <SignFormLink onClick={handleSignupClick}>
                 Sign up now.
               </SignFormLink>

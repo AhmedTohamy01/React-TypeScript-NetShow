@@ -18,7 +18,7 @@ const HeaderCompound = ({ children }: PropsType) => {
         </Navbar>
         <FeatureWrapper>
           <FeatureTitle>Unlimited movies, TV shows and more.</FeatureTitle>
-          <Warning>This is NOT official Netflix</Warning>
+          <Warning>This is NOT official NetShow</Warning>
         </FeatureWrapper>
         {children}
       </HeaderWrapper>
