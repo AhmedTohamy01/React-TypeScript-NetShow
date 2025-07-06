@@ -190,7 +190,7 @@ It contains useful links users may need it.
 
 # Live Demo
 
-***Take a look on the live version here:*** https://react-type-script-netflix-clone.vercel.app :octocat: :heart_eyes: 
+***Take a look on the live version here:*** [https://react-type-script-netflix-clone.vercel.app](https://react-typescript-netshow.vercel.app/) :octocat: :heart_eyes: 
 
 
 # Technology Used
